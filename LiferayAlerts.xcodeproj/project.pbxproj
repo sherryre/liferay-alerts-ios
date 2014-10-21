@@ -22,6 +22,9 @@
 		293BB69B19F6A011004AF345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		297C30CE19ED71EA00057718 /* LiferayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29841F1219F88CB400A7ADAF /* LRPushnotificationsdeviceService_v62.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRPushnotificationsdeviceService_v62.h; sourceTree = "<group>"; };
+		29841F1319F88CB400A7ADAF /* LRPushnotificationsdeviceService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRPushnotificationsdeviceService_v62.m; sourceTree = "<group>"; };
+		29841F1519F88CE900A7ADAF /* LiferayAlerts-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LiferayAlerts-Bridging-Header.h"; path = "Supporting Files/LiferayAlerts-Bridging-Header.h"; sourceTree = "<group>"; };
 		29C6357919F6DD9600160E35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		4B90D4F048190E83E3FB5B14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 				29C6357B19F6DD9D00160E35 /* Assets */,
 				2938A55819F6D7AA00A72879 /* Controllers */,
 				2938A55A19F6D7AA00A72879 /* Delegates */,
+				29841F1119F88CB400A7ADAF /* Services */,
 				297550BA19F6DC3200E3F550 /* Supporting Files */,
 				29C6357C19F6DDEE00160E35 /* Views */,
 			);
@@ -82,6 +86,7 @@
 		297550BA19F6DC3200E3F550 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29841F1519F88CE900A7ADAF /* LiferayAlerts-Bridging-Header.h */,
 				297550BD19F6DC7400E3F550 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -103,6 +108,15 @@
 				297C30CE19ED71EA00057718 /* LiferayAlerts.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		29841F1119F88CB400A7ADAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				29841F1219F88CB400A7ADAF /* LRPushnotificationsdeviceService_v62.h */,
+				29841F1319F88CB400A7ADAF /* LRPushnotificationsdeviceService_v62.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		29C6357B19F6DD9D00160E35 /* Assets */ = {
@@ -338,10 +352,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/LiferayAlerts/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = LiferayAlerts;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiferayAlerts/Supporting Files/LiferayAlerts-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -353,10 +367,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/LiferayAlerts/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = LiferayAlerts;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiferayAlerts/Supporting Files/LiferayAlerts-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
