@@ -19,7 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window.rootViewController = MainViewController()
 		window.makeKeyAndVisible()
 
+		PushNotificationUtil.registerForNotifications()
+
 		return true
+	}
+
+	func application(
+		application: UIApplication,
+		didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+
+		println(error.localizedDescription)
+	}
+
+	func application(
+		application: UIApplication,
+		didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
 	}
 
 }
