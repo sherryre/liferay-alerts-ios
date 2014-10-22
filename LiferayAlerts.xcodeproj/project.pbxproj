@@ -15,6 +15,7 @@
 		29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2319F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift */; };
 		29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2519F8950900A7ADAF /* SettingsUtil.swift */; };
 		29841F2919F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2819F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m */; };
+		29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2A19F895E800A7ADAF /* DatabaseHelper.swift */; };
 		29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357919F6DD9600160E35 /* Images.xcassets */; };
 		29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */; };
 		534554EDA6DA97F7571BD665 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C5F42C056303CBB27D9EE /* libPods.a */; };
@@ -32,6 +33,7 @@
 		29841F2519F8950900A7ADAF /* SettingsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
 		29841F2719F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRPushnotificationsdeviceService_v62.h; sourceTree = "<group>"; };
 		29841F2819F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRPushnotificationsdeviceService_v62.m; sourceTree = "<group>"; };
+		29841F2A19F895E800A7ADAF /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		29C6357919F6DD9600160E35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		4B90D4F048190E83E3FB5B14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				29C6357B19F6DD9D00160E35 /* Assets */,
 				29841F1D19F88EB600A7ADAF /* Callbacks */,
 				2938A55819F6D7AA00A72879 /* Controllers */,
+				29841F1E19F8914700A7ADAF /* Database */,
 				2938A55A19F6D7AA00A72879 /* Delegates */,
 				29841F1119F88CB400A7ADAF /* Services */,
 				297550BA19F6DC3200E3F550 /* Supporting Files */,
@@ -143,6 +146,14 @@
 				29841F2319F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift */,
 			);
 			name = Callbacks;
+			sourceTree = "<group>";
+		};
+		29841F1E19F8914700A7ADAF /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				29841F2A19F895E800A7ADAF /* DatabaseHelper.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		29C6357B19F6DD9D00160E35 /* Assets */ = {
@@ -285,6 +296,7 @@
 				2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */,
 				2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */,
 				29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */,
+				29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */,
 				29841F2919F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m in Sources */,
 				29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */,
 				29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */,
