@@ -5,6 +5,7 @@
 //  Silvio Santos
 //
 
+import CoreData
 import UIKit
 
 class PushNotificationUtil {
@@ -33,6 +34,33 @@ class PushNotificationUtil {
 		token = token.stringByReplacingOccurrencesOfString(" ", withString:"")
 
 		return token
+	}
+
+	class func handleNotification(notification: [NSObject: AnyObject]) {
+		var alertJson: [NSObject: AnyObject] =
+			notification["aps"] as [NSObject: AnyObject]
+
+		var userJsonString: String = notification["fromUser"] as String
+
+		var userData: NSData? = userJsonString.dataUsingEncoding(
+			NSUTF8StringEncoding)
+
+		var error: NSError?
+
+		var userJson: Dictionary = NSJSONSerialization.JSONObjectWithData(
+			userData!, options:NSJSONReadingOptions(0), error:&error)
+			as NSDictionary as Dictionary
+
+		var id: NSNumber = userJson["userId"] as NSNumber
+		var fullName: String = userJson["fullName"] as String
+		var portraitId: NSNumber = userJson["portraitId"] as NSNumber
+		var uuid: String = userJson["uuid"] as String
+
+		var user: User = UserDAO.insert(
+			id, fullName:fullName, portraitId:portraitId, uuid:uuid,
+			commit:false)
+
+		AlertDAO.insert(alertJson, user:user, commit:true)
 	}
 
 	class func registerForNotifications() {

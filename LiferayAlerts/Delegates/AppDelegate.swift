@@ -40,5 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		PushNotificationUtil.addDevice(token);
 	}
 
+	func application(
+		application: UIApplication,
+		didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+
+		PushNotificationUtil.handleNotification(userInfo)
+	}
+
 }
 
