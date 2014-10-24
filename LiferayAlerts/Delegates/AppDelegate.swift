@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?)
 		-> Bool {
 
-		var window = UIWindow(frame: UIScreen.mainScreen().bounds)
-		window.rootViewController = MainViewController()
-		window.makeKeyAndVisible()
+		window = UIWindow(frame: UIScreen.mainScreen().bounds)
+		window!.rootViewController = MainViewController()
+		window!.makeKeyAndVisible()
 
 		PushNotificationUtil.registerForNotifications()
 
@@ -46,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		PushNotificationUtil.handleNotification(userInfo)
 	}
+
+	var window: UIWindow?
 
 }
 
