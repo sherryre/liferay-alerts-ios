@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="LiferayAlerts" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="17m-ma-JLa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Dul-XO-P5U">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cat-Ug-ODQ"/>
+                        <outlet property="delegate" destination="-1" id="LIl-W3-9rl"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="top" secondItem="Dul-XO-P5U" secondAttribute="top" id="0Yx-Mm-Ef0"/>
+                <constraint firstAttribute="leading" secondItem="Dul-XO-P5U" secondAttribute="leading" id="HlR-54-Xdz"/>
+                <constraint firstAttribute="bottom" secondItem="Dul-XO-P5U" secondAttribute="bottom" id="TyZ-XO-mhO"/>
+                <constraint firstAttribute="trailing" secondItem="Dul-XO-P5U" secondAttribute="trailing" id="b0N-cz-NHt"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
