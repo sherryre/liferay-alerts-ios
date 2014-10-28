@@ -29,12 +29,12 @@ class MainViewController: UIViewController, UITableViewDataSource,
 		tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
 		-> UITableViewCell {
 
-			var alert : Alert = alerts![indexPath.row]
+		var alert : Alert = alerts![indexPath.row]
 
-			var cell: UITableViewCell = UITableViewCell()
-			cell.textLabel.text = alert.getMessage()
+		var cell: UITableViewCell = UITableViewCell()
+		cell.textLabel.text = alert.getMessage()
 
-			return cell
+		return cell
 	}
 
 	func tableView(

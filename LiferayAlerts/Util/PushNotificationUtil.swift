@@ -37,30 +37,13 @@ class PushNotificationUtil {
 	}
 
 	class func handleNotification(notification: [NSObject: AnyObject]) {
-		var alertJson: [NSObject: AnyObject] =
+		var alertJsonObj: [NSObject: AnyObject] =
 			notification["aps"] as [NSObject: AnyObject]
 
-		var userJsonString: String = notification["fromUser"] as String
+		var userJson: String = notification["fromUser"] as String
+		var user: User = _createUser(userJson)
 
-		var userData: NSData? = userJsonString.dataUsingEncoding(
-			NSUTF8StringEncoding)
-
-		var error: NSError?
-
-		var userJson: Dictionary = NSJSONSerialization.JSONObjectWithData(
-			userData!, options:NSJSONReadingOptions(0), error:&error)
-			as NSDictionary as Dictionary
-
-		var id: NSNumber = userJson["userId"] as NSNumber
-		var fullName: String = userJson["fullName"] as String
-		var portraitId: NSNumber = userJson["portraitId"] as NSNumber
-		var uuid: String = userJson["uuid"] as String
-
-		var user: User = UserDAO.insert(
-			id, fullName:fullName, portraitId:portraitId, uuid:uuid,
-			commit:false)
-
-		AlertDAO.insert(alertJson, user:user, commit:true)
+		AlertDAO.insert(alertJsonObj, user:user, commit:true)
 	}
 
 	class func registerForNotifications() {
@@ -75,5 +58,25 @@ class PushNotificationUtil {
 
 		application.registerUserNotificationSettings(settings)
 		application.registerForRemoteNotifications()
+	}
+
+	private class func _createUser(json: String) -> User {
+		var jsonData: NSData? = json.dataUsingEncoding(NSUTF8StringEncoding)
+		var error: NSError?
+
+		var jsonObj: Dictionary = NSJSONSerialization.JSONObjectWithData(
+			jsonData!, options:NSJSONReadingOptions(0), error:&error)
+			as NSDictionary as Dictionary
+
+		var id: NSNumber = jsonObj["userId"] as NSNumber
+		var fullName: String = jsonObj["fullName"] as String
+		var portraitId: NSNumber = jsonObj["portraitId"] as NSNumber
+		var uuid: String = jsonObj["uuid"] as String
+
+		var user: User = UserDAO.insert(
+			id, fullName:fullName, portraitId:portraitId, uuid:uuid,
+			commit:false)
+
+		return user;
 	}
 }
