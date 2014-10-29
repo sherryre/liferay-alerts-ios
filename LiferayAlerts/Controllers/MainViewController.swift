@@ -29,6 +29,9 @@ class MainViewController: UIViewController, UITableViewDataSource,
 
 	func initTopBar() {
 		setTopBarGradient()
+
+		divider.backgroundColor = UIColors.TOP_BAR_DIVIDER
+		dividerHeight.constant = (1 / UIScreen.mainScreen().scale)
 	}
 
 	func setTopBarGradient() {
@@ -75,6 +78,8 @@ class MainViewController: UIViewController, UITableViewDataSource,
 
 	var alerts: [Alert]?
 
+	@IBOutlet var dividerHeight: NSLayoutConstraint!
+	@IBOutlet var divider: UIView!
 	@IBOutlet var topBar: UIView!
 
 }
