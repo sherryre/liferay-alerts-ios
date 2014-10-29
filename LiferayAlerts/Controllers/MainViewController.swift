@@ -23,6 +23,29 @@ class MainViewController: UIViewController, UITableViewDataSource,
 		super.viewDidLoad()
 
 		alerts = AlertDAO.get()
+
+		initTopBar()
+	}
+
+	func initTopBar() {
+		setTopBarGradient()
+	}
+
+	func setTopBarGradient() {
+		var colors: [CGColor] = [
+			(UIColors.TOP_BAR_BACKGROUND).CGColor,
+			(UIColors.TOP_BAR_BACKGROUND_CENTER).CGColor,
+			(UIColors.TOP_BAR_BACKGROUND).CGColor
+		]
+
+		var frame: CGRect = topBar!.frame
+		var startPoint: CGPoint = CGPointMake(0, 0.5)
+		var endPoint: CGPoint = CGPointMake(1, 0.5)
+
+		var gradient: CAGradientLayer = GradientUtil.createGradient(
+			colors, frame:frame, startPoint:startPoint, endPoint:endPoint)
+
+		topBar.layer.insertSublayer(gradient, atIndex:0)
 	}
 
 	func tableView(
@@ -51,7 +74,7 @@ class MainViewController: UIViewController, UITableViewDataSource,
 	}
 
 	var alerts: [Alert]?
-	@IBOutlet weak var tableView: UITableView!
+
+	@IBOutlet var topBar: UIView!
 
 }
-
