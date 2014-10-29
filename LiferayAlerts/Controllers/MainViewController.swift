@@ -32,6 +32,10 @@ class MainViewController: UIViewController, UITableViewDataSource,
 
 		divider.backgroundColor = UIColors.TOP_BAR_DIVIDER
 		dividerHeight.constant = (1 / UIScreen.mainScreen().scale)
+
+		topBarLastAlert.textColor = UIColors.TOP_BAR_LAST_ALERT
+		userName.textColor = UIColors.TOP_BAR_USER_NAME
+		userName.shadowColor = UIColors.TOP_BAR_USER_NAME_SHADOW
 	}
 
 	func setTopBarGradient() {
@@ -81,5 +85,7 @@ class MainViewController: UIViewController, UITableViewDataSource,
 	@IBOutlet var dividerHeight: NSLayoutConstraint!
 	@IBOutlet var divider: UIView!
 	@IBOutlet var topBar: UIView!
+	@IBOutlet var topBarLastAlert: UILabel!
+	@IBOutlet var userName: UILabel!
 
 }
