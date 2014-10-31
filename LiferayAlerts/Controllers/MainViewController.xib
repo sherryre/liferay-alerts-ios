@@ -6,9 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="LiferayAlerts" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="KSJ-QJ-5IR" id="922-7q-D3X"/>
                 <outlet property="divider" destination="WWf-4T-41I" id="CR0-lQ-5LJ"/>
                 <outlet property="dividerHeight" destination="qtz-9o-nF6" id="IIK-Cg-Zrh"/>
-                <outlet property="tableView" destination="Dul-XO-P5U" id="Hbo-sv-0r2"/>
                 <outlet property="topBar" destination="1UJ-Zd-czW" id="gXc-4n-VDG"/>
                 <outlet property="topBarLastAlert" destination="g64-IY-LBr" id="xPc-Wa-ZFu"/>
                 <outlet property="userName" destination="jzf-dt-TQI" id="rMi-WD-3lS"/>
@@ -20,15 +20,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Dul-XO-P5U">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KSJ-QJ-5IR">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iD6-np-xIV">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="cat-Ug-ODQ"/>
-                        <outlet property="delegate" destination="-1" id="LIl-W3-9rl"/>
+                        <outlet property="dataSource" destination="-1" id="hU6-SW-z0Z"/>
+                        <outlet property="delegate" destination="-1" id="Sck-jE-edI"/>
                     </connections>
-                </tableView>
-                <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1UJ-Zd-czW" userLabel="Top Bar View">
+                </collectionView>
+                <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1UJ-Zd-czW" userLabel="Top Bar View">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-en-kOA">
@@ -72,16 +78,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="KSJ-QJ-5IR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0dk-91-HMT"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="bottom" secondItem="WWf-4T-41I" secondAttribute="bottom" id="794-4C-v2k"/>
-                <constraint firstAttribute="trailing" secondItem="Dul-XO-P5U" secondAttribute="trailing" id="8NF-l8-evi"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bhb-VJ-cmw"/>
-                <constraint firstAttribute="top" secondItem="Dul-XO-P5U" secondAttribute="top" id="N01-BR-LGX"/>
+                <constraint firstAttribute="bottom" secondItem="KSJ-QJ-5IR" secondAttribute="bottom" id="LaN-77-qxH"/>
+                <constraint firstItem="KSJ-QJ-5IR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rxc-uq-Uxm"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Shu-La-4eK"/>
                 <constraint firstAttribute="trailing" secondItem="1UJ-Zd-czW" secondAttribute="trailing" id="dAg-jH-Hbi"/>
+                <constraint firstAttribute="trailing" secondItem="KSJ-QJ-5IR" secondAttribute="trailing" id="eeX-4X-elp"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="leading" secondItem="WWf-4T-41I" secondAttribute="leading" id="k37-le-ZiC"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="trailing" secondItem="WWf-4T-41I" secondAttribute="trailing" id="kaZ-xe-4rV"/>
-                <constraint firstAttribute="leading" secondItem="Dul-XO-P5U" secondAttribute="leading" id="uqu-Mk-paQ"/>
-                <constraint firstAttribute="bottom" secondItem="Dul-XO-P5U" secondAttribute="bottom" id="yT0-kK-L4v"/>
             </constraints>
             <point key="canvasLocation" x="488" y="333"/>
         </view>

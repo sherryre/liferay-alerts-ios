@@ -18,8 +18,8 @@ import UIKit
 /**
  * @author Silvio Santos
  */
-class MainViewController: UIViewController, UITableViewDataSource,
-	UITableViewDelegate {
+class MainViewController: UIViewController, UICollectionViewDataSource,
+	UICollectionViewDelegate {
 
 	override init() {
 		super.init(nibName:"MainViewController", bundle:nil)
@@ -34,7 +34,21 @@ class MainViewController: UIViewController, UITableViewDataSource,
 
 		alerts = AlertDAO.get()
 
+		initCollectionView()
 		initTopBar()
+	}
+
+	func initCollectionView() {
+		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
+
+		collectionView.registerNib(
+			nib, forCellWithReuseIdentifier:"TextCardViewCellId")
+
+		var layout: UICollectionViewFlowLayout =
+			collectionView.collectionViewLayout as UICollectionViewFlowLayout
+
+		var top = topBar.frame.height
+		layout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
 	}
 
 	func initTopBar() {
@@ -43,7 +57,6 @@ class MainViewController: UIViewController, UITableViewDataSource,
 		divider.backgroundColor = UIColors.TOP_BAR_DIVIDER
 		dividerHeight.constant = (1 / UIScreen.mainScreen().scale)
 
-		tableView.tableHeaderView = UIView(frame:topBar!.frame)
 		topBarLastAlert.textColor = UIColors.TOP_BAR_LAST_ALERT
 		userName.textColor = UIColors.TOP_BAR_USER_NAME
 		userName.shadowColor = UIColors.TOP_BAR_USER_NAME_SHADOW
@@ -66,38 +79,42 @@ class MainViewController: UIViewController, UITableViewDataSource,
 		topBar.layer.insertSublayer(gradient, atIndex:0)
 	}
 
-	func tableView(
-		tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath)
-		-> UITableViewCell {
+	func collectionView(collectionView: UICollectionView,
+		cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
 		var alert : Alert = alerts![indexPath.row]
 
-		var cell: UITableViewCell = UITableViewCell()
+		var cell: TextCardViewCell =
+			collectionView.dequeueReusableCellWithReuseIdentifier(
+			"TextCardViewCellId", forIndexPath:indexPath) as TextCardViewCell
+
 		cell.textLabel.text = alert.getMessage()
 
 		return cell
 	}
 
-	func tableView(
-		tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath)
-		-> CGFloat {
+	func collectionView(collectionView: UICollectionView,
+		layout: UICollectionViewLayout, sizeForItemAtIndexPath: NSIndexPath)
+		-> CGSize {
 
-		return 51
+		var width: CGFloat = collectionView.frame.width;
+
+		return CGSize(width:width, height:60)
 	}
 
-	func tableView(
-		tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	func collectionView(collectionView: UICollectionView,
+		numberOfItemsInSection section: Int) -> Int {
 
 		return alerts!.count
 	}
 
 	var alerts: [Alert]?
 
+	@IBOutlet var collectionView: UICollectionView!
 	@IBOutlet var dividerHeight: NSLayoutConstraint!
 	@IBOutlet var divider: UIView!
 	@IBOutlet var topBar: UIView!
 	@IBOutlet var topBarLastAlert: UILabel!
-	@IBOutlet var tableView: UITableView!
 	@IBOutlet var userName: UILabel!
 
 }
