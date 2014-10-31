@@ -39,8 +39,10 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 	}
 
 	func initCollectionView() {
-		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
+		var background: UIImage = UIImage(named:"background")!
+		collectionView.backgroundColor = UIColor(patternImage:background)
 
+		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
 		collectionView.registerNib(
 			nib, forCellWithReuseIdentifier:"TextCardViewCellId")
 
