@@ -18,6 +18,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u62-k8-A3M" userLabel="Portrait">
                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="IYh-T6-Nkv" userLabel="Portrait Shadow">
                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
@@ -63,6 +64,7 @@
             </constraints>
             <size key="customSize" width="744" height="201"/>
             <connections>
+                <outlet property="portraitImageView" destination="u62-k8-A3M" id="ooQ-rP-dO8"/>
                 <outlet property="textLabel" destination="ANh-if-TNa" id="MpM-9C-DRo"/>
             </connections>
             <point key="canvasLocation" x="406" y="239.5"/>

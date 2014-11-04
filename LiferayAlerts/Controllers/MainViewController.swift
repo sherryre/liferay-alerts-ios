@@ -86,13 +86,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 	func collectionView(collectionView: UICollectionView,
 		cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
-		var alert : Alert = alerts![indexPath.row]
-
 		var cell: TextCardViewCell =
 			collectionView.dequeueReusableCellWithReuseIdentifier(
 			"TextCardViewCellId", forIndexPath:indexPath) as TextCardViewCell
 
-		cell.textLabel.text = alert.getMessage()
+		cell.setAlert(alerts![indexPath.row])
 
 		return cell
 	}

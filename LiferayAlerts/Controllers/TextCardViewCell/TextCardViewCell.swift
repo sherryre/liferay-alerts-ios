@@ -17,9 +17,35 @@ import UIKit
 
 /**
  * @author Silvio Santos
+ * @author Josiane Bezerra
  */
 class TextCardViewCell: UICollectionViewCell {
 
+	override func awakeFromNib() {
+		let radius = portraitImageView.frame.size.width / 2
+
+		portraitImageView.layer.cornerRadius = radius
+		portraitImageView.clipsToBounds = true
+	}
+
+	func setAlert(alert: Alert) {
+		textLabel.text = alert.getMessage()
+
+		_setPortrait(alert.user)
+	}
+
+	private func _setPortrait(user: User) {
+		let session = LRSession(server: SettingsUtil.getServer())
+
+		let portraitURL = LRPortraitUtil.getPortraitURL(session, male: true,
+			portraitId: user.portraitId.longLongValue, uuid: user.uuid)
+
+		let URL = NSURL(string: portraitURL)
+
+		portraitImageView.sd_setImageWithURL(URL)
+	}
+
+	@IBOutlet var portraitImageView: UIImageView!
 	@IBOutlet var textLabel: UILabel!
 
 }
