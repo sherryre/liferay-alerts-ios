@@ -29,5 +29,6 @@ struct UIColors {
 	static let TOP_BAR_LAST_ALERT: UIColor = UIColor(rgb:"B29734")
 	static let TOP_BAR_USER_NAME: UIColor = WHITE
 	static let TOP_BAR_USER_NAME_SHADOW: UIColor = UIColor(rgb:"E4C143")
+	static let VERTICAL_LINE_COLOR: UIColor = UIColor(rgb: "26233240")
 
 }

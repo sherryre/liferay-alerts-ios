@@ -70,7 +70,17 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 		var backgroundView: UIView = UIView(frame: collectionView.frame)
 		let backgroundImage = UIImage(named:"background")!
 
+		var line: UIView = UIView(frame: CGRect(
+			x: UIDimensions.VERTICAL_LINE_X,
+			y: UIDimensions.VERTICAL_LINE_Y,
+			width: UIDimensions.VERTICAL_LINE_WIDTH,
+			height: backgroundView.frame.height
+		))
+
+		line.backgroundColor = UIColors.VERTICAL_LINE_COLOR
 		backgroundView.backgroundColor = UIColor(patternImage:backgroundImage)
+		backgroundView.addSubview(line)
+
 		collectionView.backgroundView = backgroundView
 
 		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
