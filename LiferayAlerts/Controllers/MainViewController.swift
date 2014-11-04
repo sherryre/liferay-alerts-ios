@@ -35,52 +35,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 
 		alerts = AlertDAO.get()
 
-		initCollectionView()
-		initTopBar()
-	}
-
-	func initCollectionView() {
-		var background: UIImage = UIImage(named:"background")!
-		collectionView.backgroundColor = UIColor(patternImage:background)
-
-		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
-		collectionView.registerNib(
-			nib, forCellWithReuseIdentifier:"TextCardViewCellId")
-
-		var layout: UICollectionViewFlowLayout =
-			collectionView.collectionViewLayout as UICollectionViewFlowLayout
-
-		var top = topBar.frame.height
-		layout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
-		layout.minimumLineSpacing = 0
-	}
-
-	func initTopBar() {
-		setTopBarGradient()
-
-		divider.backgroundColor = UIColors.TOP_BAR_DIVIDER
-		dividerHeight.constant = (1 / UIScreen.mainScreen().scale)
-
-		topBarLastAlert.textColor = UIColors.TOP_BAR_LAST_ALERT
-		userName.textColor = UIColors.TOP_BAR_USER_NAME
-		userName.shadowColor = UIColors.TOP_BAR_USER_NAME_SHADOW
-	}
-
-	func setTopBarGradient() {
-		var colors: [CGColor] = [
-			(UIColors.TOP_BAR_BACKGROUND).CGColor,
-			(UIColors.TOP_BAR_BACKGROUND_CENTER).CGColor,
-			(UIColors.TOP_BAR_BACKGROUND).CGColor
-		]
-
-		var frame: CGRect = topBar!.frame
-		var startPoint: CGPoint = CGPointMake(0, 0.5)
-		var endPoint: CGPoint = CGPointMake(1, 0.5)
-
-		var gradient: CAGradientLayer = GradientUtil.createGradient(
-			colors, frame:frame, startPoint:startPoint, endPoint:endPoint)
-
-		topBar.layer.insertSublayer(gradient, atIndex:0)
+		_initCollectionView()
+		_initTopBar()
 	}
 
 	func collectionView(collectionView: UICollectionView,
@@ -108,6 +64,50 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 		numberOfItemsInSection section: Int) -> Int {
 
 		return alerts!.count
+	}
+
+	private func _initCollectionView() {
+		var background: UIImage = UIImage(named:"background")!
+		collectionView.backgroundColor = UIColor(patternImage:background)
+
+		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
+		collectionView.registerNib(
+			nib, forCellWithReuseIdentifier:"TextCardViewCellId")
+
+		var layout: UICollectionViewFlowLayout =
+			collectionView.collectionViewLayout as UICollectionViewFlowLayout
+
+		var top = topBar.frame.height
+		layout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
+		layout.minimumLineSpacing = 0
+	}
+
+	private func _initTopBar() {
+		_setTopBarGradient()
+
+		divider.backgroundColor = UIColors.TOP_BAR_DIVIDER
+		dividerHeight.constant = (1 / UIScreen.mainScreen().scale)
+
+		topBarLastAlert.textColor = UIColors.TOP_BAR_LAST_ALERT
+		userName.textColor = UIColors.TOP_BAR_USER_NAME
+		userName.shadowColor = UIColors.TOP_BAR_USER_NAME_SHADOW
+	}
+
+	private func _setTopBarGradient() {
+		var colors: [CGColor] = [
+			(UIColors.TOP_BAR_BACKGROUND).CGColor,
+			(UIColors.TOP_BAR_BACKGROUND_CENTER).CGColor,
+			(UIColors.TOP_BAR_BACKGROUND).CGColor
+		]
+
+		var frame: CGRect = topBar!.frame
+		var startPoint: CGPoint = CGPointMake(0, 0.5)
+		var endPoint: CGPoint = CGPointMake(1, 0.5)
+
+		var gradient: CAGradientLayer = GradientUtil.createGradient(
+			colors, frame:frame, startPoint:startPoint, endPoint:endPoint)
+
+		topBar.layer.insertSublayer(gradient, atIndex:0)
 	}
 
 	var alerts: [Alert]?
