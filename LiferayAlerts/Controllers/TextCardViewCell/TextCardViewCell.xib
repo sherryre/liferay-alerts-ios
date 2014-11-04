@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -13,11 +13,35 @@
                 <rect key="frame" x="0.0" y="0.0" width="744" height="201"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGF-FK-zAs" userLabel="Portrait View">
+                        <rect key="frame" x="13" y="9" width="49" height="49"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u62-k8-A3M" userLabel="Portrait">
+                                <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait_shadow" translatesAutoresizingMaskIntoConstraints="NO" id="IYh-T6-Nkv" userLabel="Portrait Shadow">
+                                <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="4VL-jr-ORW"/>
+                            <constraint firstItem="u62-k8-A3M" firstAttribute="leading" secondItem="HGF-FK-zAs" secondAttribute="leading" id="5qv-Ez-RkN"/>
+                            <constraint firstAttribute="bottom" secondItem="u62-k8-A3M" secondAttribute="bottom" id="8Lq-oP-QY1"/>
+                            <constraint firstAttribute="trailing" secondItem="u62-k8-A3M" secondAttribute="trailing" id="8zt-YL-3QA"/>
+                            <constraint firstAttribute="trailing" secondItem="IYh-T6-Nkv" secondAttribute="trailing" id="9XU-GN-kYq"/>
+                            <constraint firstItem="IYh-T6-Nkv" firstAttribute="top" secondItem="HGF-FK-zAs" secondAttribute="top" id="B6E-zv-XHx"/>
+                            <constraint firstAttribute="width" constant="49" id="CDh-RD-x0H"/>
+                            <constraint firstAttribute="bottom" secondItem="IYh-T6-Nkv" secondAttribute="bottom" id="LgE-Fy-bUG"/>
+                            <constraint firstItem="IYh-T6-Nkv" firstAttribute="leading" secondItem="HGF-FK-zAs" secondAttribute="leading" id="ZMF-Iy-XBq"/>
+                            <constraint firstItem="u62-k8-A3M" firstAttribute="top" secondItem="HGF-FK-zAs" secondAttribute="top" id="edg-EY-lqw"/>
+                        </constraints>
+                    </view>
                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-Lp-Y6G" userLabel="Card Shape" customClass="CardShapeView" customModule="LiferayAlerts" customModuleProvider="target">
-                        <rect key="frame" x="69" y="0.0" width="662" height="201"/>
+                        <rect key="frame" x="69" y="13" width="662" height="188"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-if-TNa" userLabel="Text">
-                        <rect key="frame" x="87" y="11" width="633" height="179"/>
+                        <rect key="frame" x="87" y="24" width="633" height="166"/>
                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -30,9 +54,11 @@
                 <constraint firstItem="ANh-if-TNa" firstAttribute="top" secondItem="yQ9-Lp-Y6G" secondAttribute="top" constant="11" id="DiL-nj-bpP"/>
                 <constraint firstItem="ANh-if-TNa" firstAttribute="leading" secondItem="yQ9-Lp-Y6G" secondAttribute="leading" constant="18" id="NpH-BE-lRc"/>
                 <constraint firstItem="yQ9-Lp-Y6G" firstAttribute="trailing" secondItem="ANh-if-TNa" secondAttribute="trailing" constant="11" id="QQg-XA-m3L"/>
+                <constraint firstItem="HGF-FK-zAs" firstAttribute="top" secondItem="0Tt-nd-PRI" secondAttribute="top" constant="9" id="TKj-ty-Amt"/>
                 <constraint firstItem="yQ9-Lp-Y6G" firstAttribute="bottom" secondItem="ANh-if-TNa" secondAttribute="bottom" constant="11" id="Wjh-m8-5RD"/>
                 <constraint firstAttribute="bottom" secondItem="yQ9-Lp-Y6G" secondAttribute="bottom" id="ZQf-RN-k3w"/>
-                <constraint firstItem="yQ9-Lp-Y6G" firstAttribute="top" secondItem="0Tt-nd-PRI" secondAttribute="top" id="gXh-09-KUt"/>
+                <constraint firstItem="HGF-FK-zAs" firstAttribute="leading" secondItem="0Tt-nd-PRI" secondAttribute="leading" constant="13" id="cHl-Ck-rpt"/>
+                <constraint firstItem="yQ9-Lp-Y6G" firstAttribute="top" secondItem="0Tt-nd-PRI" secondAttribute="top" constant="13" id="gXh-09-KUt"/>
                 <constraint firstAttribute="trailing" secondItem="yQ9-Lp-Y6G" secondAttribute="trailing" constant="13" id="qVN-XI-AAH"/>
             </constraints>
             <size key="customSize" width="744" height="201"/>
@@ -42,4 +68,7 @@
             <point key="canvasLocation" x="406" y="239.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="portrait_shadow" width="49" height="49"/>
+    </resources>
 </document>
