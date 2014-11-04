@@ -17,6 +17,7 @@ import UIKit
 
 /**
  * @author Silvio Santos
+ * @author Josiane Bezerra
  */
 class MainViewController: UIViewController, UICollectionViewDataSource,
 	UICollectionViewDelegate {
@@ -51,6 +52,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 
 		var top = topBar.frame.height
 		layout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
+		layout.minimumLineSpacing = 0
 	}
 
 	func initTopBar() {
