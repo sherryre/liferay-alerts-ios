@@ -16,6 +16,7 @@ import UIKit
 
 /**
  * @author Silvio Santos
+ * @author Josiane Bzerra
  */
 class CardShapeView: UIView {
 
@@ -28,15 +29,23 @@ class CardShapeView: UIView {
 		var path: UIBezierPath = UIBezierPath();
 		path.lineWidth = STROKE
 
-		drawArrow(path)
-		drawRectangle(path, rect:rect)
+		_drawArrow(path)
+		_drawRectangle(path, rect:rect)
 
 		path.closePath()
 		path.fill()
 		path.stroke()
 	}
 
-	func drawArrow(path: UIBezierPath) {
+	private func _drawArc(
+		path: UIBezierPath, center: CGPoint, startAngle: CGFloat,
+		endAngle: CGFloat) {
+
+		path.addArcWithCenter(center, radius:RADIUS, startAngle:startAngle,
+			endAngle:endAngle, clockwise:true)
+	}
+
+	private func _drawArrow(path: UIBezierPath) {
 		var bottom: CGPoint = CGPoint(
 			x:ARROW_WIDTH, y:(ARROW_START_Y + ARROW_HEIGHT))
 
@@ -48,7 +57,7 @@ class CardShapeView: UIView {
 		path.addLineToPoint(top)
 	}
 
-	func drawRectangle(path: UIBezierPath, rect: CGRect) {
+	private func _drawRectangle(path: UIBezierPath, rect: CGRect) {
 		var width = rect.width - PADDING_HORIZONTAL
 		var height = rect.height - PADDING_VERTICAL
 
@@ -62,28 +71,20 @@ class CardShapeView: UIView {
 		var bottomRightArcCenter = CGPoint(x:right, y:bottom)
 		var bottomLeftArcCenter = CGPoint(x:left, y:bottom)
 
-		drawArc(path, center:topLeftArcCenter, startAngle:PI, endAngle:3*PI/2)
+		_drawArc(path, center:topLeftArcCenter, startAngle:PI, endAngle:3*PI/2)
 		path.addLineToPoint(CGPoint(x:right, y:PADDING_VERTICAL))
 
-		drawArc(path, center:topRightArcCenter, startAngle:3*PI/2,
+		_drawArc(path, center:topRightArcCenter, startAngle:3*PI/2,
 			endAngle:2*PI)
 
 		path.addLineToPoint(CGPoint(x:width, y:bottom))
 
-		drawArc(path, center:bottomRightArcCenter, startAngle:2*PI,
+		_drawArc(path, center:bottomRightArcCenter, startAngle:2*PI,
 			endAngle:PI/2)
 
 		path.addLineToPoint(CGPoint(x:left, y:height))
 
-		drawArc(path, center:bottomLeftArcCenter, startAngle:PI/2, endAngle:PI)
-	}
-
-	func drawArc(
-		path: UIBezierPath, center: CGPoint, startAngle: CGFloat,
-		endAngle: CGFloat) {
-
-		path.addArcWithCenter(center, radius:RADIUS, startAngle:startAngle,
-			endAngle:endAngle, clockwise:true)
+		_drawArc(path, center:bottomLeftArcCenter, startAngle:PI/2, endAngle:PI)
 	}
 
 	let ARROW_HEIGHT: CGFloat = 11.0
