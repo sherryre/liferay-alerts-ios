@@ -19,7 +19,7 @@ import UIKit
  * @author Silvio Santos
  * @author Josiane Bezerra
  */
-class TextCardViewCell: UICollectionViewCell {
+class AlertViewCell: UICollectionViewCell {
 
 	override func awakeFromNib() {
 		_setRadius(portraitImageView)

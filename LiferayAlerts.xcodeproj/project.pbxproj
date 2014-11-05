@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290106981A02CDA9003C0F05 /* TextCardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290106971A02CDA9003C0F05 /* TextCardViewCell.xib */; };
-		2901069A1A02CE0B003C0F05 /* TextCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290106991A02CE0B003C0F05 /* TextCardViewCell.swift */; };
+		290106981A02CDA9003C0F05 /* AlertViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290106971A02CDA9003C0F05 /* AlertViewCell.xib */; };
+		2901069A1A02CE0B003C0F05 /* AlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290106991A02CE0B003C0F05 /* AlertViewCell.swift */; };
 		2901DB7119FEDCB200E25788 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901DB7019FEDCB100E25788 /* UIColor.swift */; };
 		2901DB7419FEF71500E25788 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901DB7319FEF71500E25788 /* UIColors.swift */; };
 		2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55919F6D7AA00A72879 /* MainViewController.swift */; };
@@ -38,8 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		290106971A02CDA9003C0F05 /* TextCardViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextCardViewCell.xib; path = TextCardViewCell/TextCardViewCell.xib; sourceTree = "<group>"; };
-		290106991A02CE0B003C0F05 /* TextCardViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextCardViewCell.swift; path = TextCardViewCell/TextCardViewCell.swift; sourceTree = "<group>"; };
+		290106971A02CDA9003C0F05 /* AlertViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertViewCell.xib; sourceTree = "<group>"; };
+		290106991A02CE0B003C0F05 /* AlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCell.swift; sourceTree = "<group>"; };
 		2901DB7019FEDCB100E25788 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Extensions/UIColor.swift; sourceTree = "<group>"; };
 		2901DB7319FEF71500E25788 /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		2938A55919F6D7AA00A72879 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -86,13 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2901069B1A03FBBF003C0F05 /* TextCardViewCell */ = {
+		2901069B1A03FBBF003C0F05 /* AlertViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				290106971A02CDA9003C0F05 /* TextCardViewCell.xib */,
-				290106991A02CE0B003C0F05 /* TextCardViewCell.swift */,
+				290106971A02CDA9003C0F05 /* AlertViewCell.xib */,
+				290106991A02CE0B003C0F05 /* AlertViewCell.swift */,
 			);
-			name = TextCardViewCell;
+			path = AlertViewCell;
 			sourceTree = "<group>";
 		};
 		2901DB7219FEEE7500E25788 /* Extensions */ = {
@@ -133,7 +133,7 @@
 		2938A55819F6D7AA00A72879 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2901069B1A03FBBF003C0F05 /* TextCardViewCell */,
+				2901069B1A03FBBF003C0F05 /* AlertViewCell */,
 				298A45B019FAD6CD00D9AB93 /* MainViewController.xib */,
 				2938A55919F6D7AA00A72879 /* MainViewController.swift */,
 			);
@@ -327,7 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290106981A02CDA9003C0F05 /* TextCardViewCell.xib in Resources */,
+				290106981A02CDA9003C0F05 /* AlertViewCell.xib in Resources */,
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
@@ -379,7 +379,7 @@
 				298A45AB19F98D4E00D9AB93 /* User.swift in Sources */,
 				2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */,
 				298A45AE19F9989A00D9AB93 /* AlertDAO.swift in Sources */,
-				2901069A1A02CE0B003C0F05 /* TextCardViewCell.swift in Sources */,
+				2901069A1A02CE0B003C0F05 /* AlertViewCell.swift in Sources */,
 				2901DB7119FEDCB200E25788 /* UIColor.swift in Sources */,
 				2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */,
 				29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */,

@@ -42,9 +42,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 	func collectionView(collectionView: UICollectionView,
 		cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
-		var cell: TextCardViewCell =
+		var cell: AlertViewCell =
 			collectionView.dequeueReusableCellWithReuseIdentifier(
-			"TextCardViewCellId", forIndexPath:indexPath) as TextCardViewCell
+			"AlertViewCellId", forIndexPath:indexPath) as AlertViewCell
 
 		cell.setAlert(alerts![indexPath.row])
 
@@ -83,9 +83,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 
 		collectionView.backgroundView = backgroundView
 
-		var nib: UINib = UINib(nibName:"TextCardViewCell", bundle:nil)
+		var nib: UINib = UINib(nibName:"AlertViewCell", bundle:nil)
 		collectionView.registerNib(
-			nib, forCellWithReuseIdentifier:"TextCardViewCellId")
+			nib, forCellWithReuseIdentifier:"AlertViewCellId")
 
 		var layout: UICollectionViewFlowLayout =
 			collectionView.collectionViewLayout as UICollectionViewFlowLayout
