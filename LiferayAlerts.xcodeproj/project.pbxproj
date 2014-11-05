@@ -33,6 +33,8 @@
 		29F8E49319FE886B000A7CA2 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8E49219FE886B000A7CA2 /* AlertExtension.swift */; };
 		534554EDA6DA97F7571BD665 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C5F42C056303CBB27D9EE /* libPods.a */; };
 		75B8DE771A097A5900298092 /* UIDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE761A097A5900298092 /* UIDimensions.swift */; };
+		75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */; };
+		75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		29F8E49219FE886B000A7CA2 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertExtension.swift; path = Extensions/AlertExtension.swift; sourceTree = "<group>"; };
 		4B90D4F048190E83E3FB5B14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		75B8DE761A097A5900298092 /* UIDimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDimensions.swift; sourceTree = "<group>"; };
+		75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LiferayAlerts-Regular.ttf"; path = "Assets/LiferayAlerts-Regular.ttf"; sourceTree = "<group>"; };
+		75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUtil.swift; sourceTree = "<group>"; };
 		9B9C5F42C056303CBB27D9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02323913B620570916343E5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +188,7 @@
 		29841F1619F88D6D00A7ADAF /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */,
 				2999F2BB1A001A1000456701 /* GradientUtil.swift */,
 				29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */,
 				29841F2519F8950900A7ADAF /* SettingsUtil.swift */,
@@ -232,6 +237,7 @@
 		29C6357B19F6DD9D00160E35 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */,
 				29C6357919F6DD9600160E35 /* Images.xcassets */,
 			);
 			name = Assets;
@@ -323,6 +329,7 @@
 			files = (
 				290106981A02CDA9003C0F05 /* TextCardViewCell.xib in Resources */,
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
+				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
 				297550C019F6DC7400E3F550 /* Info.plist in Resources */,
 				298A45B119FAD6CD00D9AB93 /* MainViewController.xib in Resources */,
@@ -379,6 +386,7 @@
 				29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */,
 				29841F2919F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m in Sources */,
 				29F8E49319FE886B000A7CA2 /* AlertExtension.swift in Sources */,
+				75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */,
 				75B8DE771A097A5900298092 /* UIDimensions.swift in Sources */,
 				298A45AF19F9989A00D9AB93 /* UserDAO.swift in Sources */,
 				29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */,

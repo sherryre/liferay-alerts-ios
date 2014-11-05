@@ -22,10 +22,8 @@ import UIKit
 class TextCardViewCell: UICollectionViewCell {
 
 	override func awakeFromNib() {
-		let radius = portraitImageView.frame.size.width / 2
-
-		portraitImageView.layer.cornerRadius = radius
-		portraitImageView.clipsToBounds = true
+		_setRadius(portraitImageView)
+		_setRadius(typeBadge)
 	}
 
 	func setAlert(alert: Alert) {
@@ -45,7 +43,15 @@ class TextCardViewCell: UICollectionViewCell {
 		portraitImageView.sd_setImageWithURL(URL)
 	}
 
+	private func _setRadius(view: UIView) {
+		let radius = view.frame.size.width / 2
+
+		view.layer.cornerRadius = radius
+		view.clipsToBounds = true
+	}
+
 	@IBOutlet var portraitImageView: UIImageView!
 	@IBOutlet var textLabel: UILabel!
+	@IBOutlet var typeBadge: UIView!
 
 }
