@@ -65,7 +65,7 @@
                             <constraint firstItem="Nfm-9B-3sB" firstAttribute="top" secondItem="KCF-kh-1no" secondAttribute="top" id="y4Y-22-ALQ"/>
                         </constraints>
                     </view>
-                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-Lp-Y6G" userLabel="Card Shape" customClass="CardShapeView" customModule="LiferayAlerts" customModuleProvider="target">
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQ9-Lp-Y6G" customClass="CardView" customModule="LiferayAlerts" customModuleProvider="target">
                         <rect key="frame" x="69" y="13" width="662" height="188"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-if-TNa" userLabel="Text">

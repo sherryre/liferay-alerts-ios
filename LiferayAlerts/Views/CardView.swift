@@ -18,7 +18,7 @@ import UIKit
  * @author Silvio Santos
  * @author Josiane Bzerra
  */
-class CardShapeView: UIView {
+class CardView: UIView {
 
 	override func drawRect(rect: CGRect) {
 		super.drawRect(rect)
