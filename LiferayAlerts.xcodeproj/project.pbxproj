@@ -35,8 +35,13 @@
 		75B8DE771A097A5900298092 /* UIDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE761A097A5900298092 /* UIDimensions.swift */; };
 		75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */; };
 		75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */; };
+		75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7C1A0AAC7500298092 /* TextCardView.swift */; };
 		75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */; };
 		75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CCC1A1166580078D3EE /* AlertType.swift */; };
+		75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */; };
+		75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */; };
+		75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC61A1132170078D3EE /* LinkCardView.swift */; };
+		75DA6CC91A11326A0078D3EE /* PollsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC81A11326A0078D3EE /* PollsCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,8 +76,13 @@
 		75B8DE761A097A5900298092 /* UIDimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDimensions.swift; sourceTree = "<group>"; };
 		75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LiferayAlerts-Regular.ttf"; path = "Assets/LiferayAlerts-Regular.ttf"; sourceTree = "<group>"; };
 		75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUtil.swift; sourceTree = "<group>"; };
+		75B8DE7C1A0AAC7500298092 /* TextCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCardView.swift; sourceTree = "<group>"; };
 		75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorUtil.swift; sourceTree = "<group>"; };
 		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewFactory.swift; sourceTree = "<group>"; };
+		75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
+		75DA6CC61A1132170078D3EE /* LinkCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCardView.swift; sourceTree = "<group>"; };
+		75DA6CC81A11326A0078D3EE /* PollsCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsCardView.swift; sourceTree = "<group>"; };
 		9B9C5F42C056303CBB27D9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02323913B620570916343E5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -262,6 +272,11 @@
 			isa = PBXGroup;
 			children = (
 				296C65A31A0155F200ACF560 /* CardView.swift */,
+				75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */,
+				75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */,
+				75DA6CC61A1132170078D3EE /* LinkCardView.swift */,
+				75DA6CC81A11326A0078D3EE /* PollsCardView.swift */,
+				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
 			);
 			path = "Card Views";
 			sourceTree = "<group>";
@@ -347,6 +362,7 @@
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
 				297550C019F6DC7400E3F550 /* Info.plist in Resources */,
 				298A45B119FAD6CD00D9AB93 /* MainViewController.xib in Resources */,
+				75B8DE7F1A0AB6AC00298092 /* TextCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,12 +413,16 @@
 				2901DB7119FEDCB200E25788 /* UIColor.swift in Sources */,
 				2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */,
 				29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */,
+				75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */,
 				29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */,
 				29841F2919F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m in Sources */,
 				29F8E49319FE886B000A7CA2 /* AlertExtension.swift in Sources */,
 				75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */,
 				75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */,
 				75B8DE771A097A5900298092 /* UIDimensions.swift in Sources */,
+				75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */,
+				75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */,
+				75DA6CC91A11326A0078D3EE /* PollsCardView.swift in Sources */,
 				298A45AF19F9989A00D9AB93 /* UserDAO.swift in Sources */,
 				75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */,
 				29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */,
@@ -410,6 +430,7 @@
 				298A45A919F98CCB00D9AB93 /* Model.xcdatamodeld in Sources */,
 				29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */,
 				2901DB7419FEF71500E25788 /* UIColors.swift in Sources */,
+				75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */,
 				296C65A41A0155F200ACF560 /* CardView.swift in Sources */,
 				2999F2BC1A001A1000456701 /* GradientUtil.swift in Sources */,
 			);
