@@ -37,6 +37,16 @@ class CardView: UIView {
 		path.stroke()
 	}
 
+	class func loadFromNib(name: String) -> CardView? {
+		let nib: UINib = UINib(nibName: name, bundle: NSBundle.mainBundle())
+
+		return nib.instantiateWithOwner(nil, options: nil)[0] as? CardView
+	}
+
+	func setAlert(alert: Alert) {
+		messageLabel.text = alert.getMessage()
+	}
+
 	private func _drawArc(
 		path: UIBezierPath, center: CGPoint, startAngle: CGFloat,
 		endAngle: CGFloat) {
@@ -95,5 +105,7 @@ class CardView: UIView {
 	let PI: CGFloat = 3.1415
 	let RADIUS: CGFloat = 5.6
 	let STROKE: CGFloat = 1.0
+
+	@IBOutlet var messageLabel: UILabel!
 
 }

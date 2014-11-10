@@ -36,6 +36,7 @@
 		75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */; };
 		75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */; };
 		75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7C1A0AAC7500298092 /* TextCardView.swift */; };
+		75B8DE7F1A0AB6AC00298092 /* TextCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */; };
 		75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */; };
 		75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CCC1A1166580078D3EE /* AlertType.swift */; };
 		75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */; };
@@ -77,6 +78,7 @@
 		75B8DE781A0A59D300298092 /* LiferayAlerts-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LiferayAlerts-Regular.ttf"; path = "Assets/LiferayAlerts-Regular.ttf"; sourceTree = "<group>"; };
 		75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUtil.swift; sourceTree = "<group>"; };
 		75B8DE7C1A0AAC7500298092 /* TextCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCardView.swift; sourceTree = "<group>"; };
+		75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCardView.xib; sourceTree = "<group>"; };
 		75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorUtil.swift; sourceTree = "<group>"; };
 		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewFactory.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				75DA6CC61A1132170078D3EE /* LinkCardView.swift */,
 				75DA6CC81A11326A0078D3EE /* PollsCardView.swift */,
 				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
+				75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */,
 			);
 			path = "Card Views";
 			sourceTree = "<group>";
