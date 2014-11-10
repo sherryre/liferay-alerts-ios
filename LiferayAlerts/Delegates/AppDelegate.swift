@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(
 		application: UIApplication,
-		didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+		didReceiveRemoteNotification userInfo: [NSObject: AnyObject]) {
 
 		PushNotificationUtil.handleNotification(userInfo)
 	}

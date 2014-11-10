@@ -15,10 +15,20 @@ import Foundation
 
 /**
  * @author Silvio Santos
+ * @author Josiane Bezerra
  */
 extension Alert {
 
 	func getMessage() -> String? {
 		return payload["alert"] as String?
 	}
+
+	func getType() -> AlertType? {
+		return AlertType(rawValue: (payload["type"] as String)) as AlertType?
+	}
+
+	func getURL() -> String? {
+		return payload["url"] as String?
+	}
+
 }

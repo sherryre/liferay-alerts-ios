@@ -53,6 +53,9 @@ class PushNotificationUtil {
 		var userJson: String = notification["fromUser"] as String
 		var user: User = _createUser(userJson)
 
+		alertJsonObj = alertJsonObj +
+			_parseJson(notification["payload"] as String)
+
 		AlertDAO.insert(alertJsonObj, user:user, commit:true)
 	}
 
@@ -71,12 +74,7 @@ class PushNotificationUtil {
 	}
 
 	private class func _createUser(json: String) -> User {
-		var jsonData: NSData? = json.dataUsingEncoding(NSUTF8StringEncoding)
-		var error: NSError?
-
-		var jsonObj: Dictionary = NSJSONSerialization.JSONObjectWithData(
-			jsonData!, options:NSJSONReadingOptions(0), error:&error)
-			as NSDictionary as Dictionary
+		var jsonObj = _parseJson(json)
 
 		var id: NSNumber = jsonObj["userId"] as NSNumber
 		var fullName: String = jsonObj["fullName"] as String
@@ -89,4 +87,16 @@ class PushNotificationUtil {
 
 		return user;
 	}
+
+	private class func _parseJson(json: String) -> [NSObject: AnyObject] {
+		var jsonData: NSData? = json.dataUsingEncoding(NSUTF8StringEncoding)
+		var error: NSError?
+
+		var jsonObj = NSJSONSerialization.JSONObjectWithData(
+			jsonData!, options:NSJSONReadingOptions(0), error:&error)
+			as [NSObject: AnyObject]
+
+		return jsonObj
+	}
+
 }
