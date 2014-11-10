@@ -246,10 +246,18 @@
 		29C6357C19F6DDEE00160E35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				296C65A31A0155F200ACF560 /* CardView.swift */,
+				75DA6CBF1A11283A0078D3EE /* Card Views */,
 				29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		75DA6CBF1A11283A0078D3EE /* Card Views */ = {
+			isa = PBXGroup;
+			children = (
+				296C65A31A0155F200ACF560 /* CardView.swift */,
+			);
+			path = "Card Views";
 			sourceTree = "<group>";
 		};
 		D7017E4CB05CE1901C6DB99B /* Frameworks */ = {
