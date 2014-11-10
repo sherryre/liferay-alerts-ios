@@ -27,8 +27,6 @@ class AlertViewCell: UICollectionViewCell {
 	}
 
 	func setAlert(alert: Alert) {
-		textLabel.text = alert.getMessage()
-
 		_setPortrait(alert.user)
 	}
 
@@ -50,8 +48,8 @@ class AlertViewCell: UICollectionViewCell {
 		view.clipsToBounds = true
 	}
 
+	@IBOutlet var cardViewContainer: UIView!
 	@IBOutlet var portraitImageView: UIImageView!
-	@IBOutlet var textLabel: UILabel!
 	@IBOutlet var typeBadge: UIView!
 
 }
