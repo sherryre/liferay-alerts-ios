@@ -44,7 +44,7 @@ class CardView: UIView {
 	}
 
 	func setAlert(alert: Alert) {
-		messageLabel.text = alert.getMessage()
+		_setMessage(alert.getMessage()!)
 	}
 
 	private func _drawArc(
@@ -95,6 +95,16 @@ class CardView: UIView {
 		path.addLineToPoint(CGPoint(x:left, y:height))
 
 		_drawArc(path, center:bottomLeftArcCenter, startAngle:PI/2, endAngle:PI)
+	}
+
+	private func _setMessage(message: String) {
+		messageLabel.text = message
+		messageLabel.textColor = UIColors.CARD_MESSAFE
+
+		var frame: CGRect = messageLabel.frame
+		frame.size.height = messageLabel.sizeThatFits(frame.size).height
+
+		messageLabel.frame = frame
 	}
 
 	let ARROW_HEIGHT: CGFloat = 11.0
