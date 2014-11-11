@@ -17,6 +17,14 @@
 */
 struct UIDimensions {
 
+	static let CARD_ARROW_HEIGHT: CGFloat = 11.0
+	static let CARD_ARROW_START_Y: CGFloat = 15.0
+	static let CARD_ARROW_WIDTH: CGFloat = 6.5
+	static let CARD_PADDING_HORIZONTAL: CGFloat = 2.0
+	static let CARD_PADDING_VERTICAL: CGFloat = 1.0
+	static let CARD_RADIUS: CGFloat = 5.6
+	static let CARD_STROKE: CGFloat = 1.0
+
 	static let VERTICAL_LINE_WIDTH: CGFloat = 1.0
 	static let VERTICAL_LINE_X: CGFloat = 37.0
 	static let VERTICAL_LINE_Y: CGFloat = 0.0

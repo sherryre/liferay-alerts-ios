@@ -107,14 +107,14 @@ class CardView: UIView {
 		messageLabel.frame = frame
 	}
 
-	let ARROW_HEIGHT: CGFloat = 11.0
-	let ARROW_START_Y: CGFloat = 15.0
-	let ARROW_WIDTH: CGFloat = 6.5
-	let PADDING_HORIZONTAL: CGFloat = 2.0
-	let PADDING_VERTICAL: CGFloat = 1.0
+	let ARROW_HEIGHT: CGFloat = UIDimensions.CARD_ARROW_HEIGHT
+	let ARROW_START_Y: CGFloat = UIDimensions.CARD_ARROW_START_Y
+	let ARROW_WIDTH: CGFloat = UIDimensions.CARD_ARROW_WIDTH
+	let PADDING_HORIZONTAL: CGFloat = UIDimensions.CARD_PADDING_HORIZONTAL
+	let PADDING_VERTICAL: CGFloat = UIDimensions.CARD_PADDING_VERTICAL
 	let PI: CGFloat = 3.1415
-	let RADIUS: CGFloat = 5.6
-	let STROKE: CGFloat = 1.0
+	let RADIUS: CGFloat = UIDimensions.CARD_RADIUS
+	let STROKE: CGFloat = UIDimensions.CARD_STROKE
 
 	@IBOutlet var messageLabel: UILabel!
 
