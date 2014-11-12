@@ -14,8 +14,8 @@
 		2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55919F6D7AA00A72879 /* MainViewController.swift */; };
 		2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55B19F6D7AA00A72879 /* AppDelegate.swift */; };
 		293BB69C19F6A011004AF345 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293BB69B19F6A011004AF345 /* CoreData.framework */; };
-		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
+		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
 		29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2319F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift */; };
 		29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2519F8950900A7ADAF /* SettingsUtil.swift */; };
@@ -30,6 +30,7 @@
 		2999F2BC1A001A1000456701 /* GradientUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2999F2BB1A001A1000456701 /* GradientUtil.swift */; };
 		29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357919F6DD9600160E35 /* Images.xcassets */; };
 		29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */; };
+		29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DE3F9C1A139BD8006A637F /* LinkCardView.xib */; };
 		29F8E49319FE886B000A7CA2 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8E49219FE886B000A7CA2 /* AlertExtension.swift */; };
 		534554EDA6DA97F7571BD665 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C5F42C056303CBB27D9EE /* libPods.a */; };
 		75B8DE771A097A5900298092 /* UIDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE761A097A5900298092 /* UIDimensions.swift */; };
@@ -38,11 +39,11 @@
 		75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7C1A0AAC7500298092 /* TextCardView.swift */; };
 		75B8DE7F1A0AB6AC00298092 /* TextCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */; };
 		75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */; };
-		75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CCC1A1166580078D3EE /* AlertType.swift */; };
 		75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */; };
 		75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */; };
 		75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC61A1132170078D3EE /* LinkCardView.swift */; };
 		75DA6CC91A11326A0078D3EE /* PollsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC81A11326A0078D3EE /* PollsCardView.swift */; };
+		75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CCC1A1166580078D3EE /* AlertType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		2999F2BB1A001A1000456701 /* GradientUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientUtil.swift; sourceTree = "<group>"; };
 		29C6357919F6DD9600160E35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		29DE3F9C1A139BD8006A637F /* LinkCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCardView.xib; sourceTree = "<group>"; };
 		29F8E49219FE886B000A7CA2 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertExtension.swift; path = Extensions/AlertExtension.swift; sourceTree = "<group>"; };
 		4B90D4F048190E83E3FB5B14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		75B8DE761A097A5900298092 /* UIDimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDimensions.swift; sourceTree = "<group>"; };
@@ -80,11 +82,11 @@
 		75B8DE7C1A0AAC7500298092 /* TextCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCardView.swift; sourceTree = "<group>"; };
 		75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCardView.xib; sourceTree = "<group>"; };
 		75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorUtil.swift; sourceTree = "<group>"; };
-		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewFactory.swift; sourceTree = "<group>"; };
 		75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 		75DA6CC61A1132170078D3EE /* LinkCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCardView.swift; sourceTree = "<group>"; };
 		75DA6CC81A11326A0078D3EE /* PollsCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsCardView.swift; sourceTree = "<group>"; };
+		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		9B9C5F42C056303CBB27D9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02323913B620570916343E5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,6 +279,7 @@
 				75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */,
 				75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */,
 				75DA6CC61A1132170078D3EE /* LinkCardView.swift */,
+				29DE3F9C1A139BD8006A637F /* LinkCardView.xib */,
 				75DA6CC81A11326A0078D3EE /* PollsCardView.swift */,
 				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
 				75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */,
@@ -363,6 +366,7 @@
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
+				29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */,
 				297550C019F6DC7400E3F550 /* Info.plist in Resources */,
 				298A45B119FAD6CD00D9AB93 /* MainViewController.xib in Resources */,
 				75B8DE7F1A0AB6AC00298092 /* TextCardView.xib in Resources */,
