@@ -100,6 +100,7 @@ class CardView: UIView {
 	private func _setMessage(message: String) {
 		messageLabel.text = message
 		messageLabel.textColor = UIColors.CARD_MESSAFE
+		messageLabel.font = TEXT_FONT
 
 		var frame: CGRect = messageLabel.frame
 		frame.size.height = messageLabel.sizeThatFits(frame.size).height
@@ -115,6 +116,9 @@ class CardView: UIView {
 	let PI: CGFloat = 3.1415
 	let RADIUS: CGFloat = UIDimensions.CARD_RADIUS
 	let STROKE: CGFloat = UIDimensions.CARD_STROKE
+
+	let TEXT_FONT: UIFont = UIFont(
+		name: "Helvetica-Light", size: UIDimensions.CARD_TEXT_SIZE)!
 
 	@IBOutlet var messageLabel: UILabel!
 

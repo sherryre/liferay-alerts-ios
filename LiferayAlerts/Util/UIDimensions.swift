@@ -24,6 +24,7 @@ struct UIDimensions {
 	static let CARD_PADDING_VERTICAL: CGFloat = 1.0
 	static let CARD_RADIUS: CGFloat = 5.6
 	static let CARD_STROKE: CGFloat = 1.0
+	static let CARD_TEXT_SIZE: CGFloat = 15.0
 
 	static let VERTICAL_LINE_WIDTH: CGFloat = 1.0
 	static let VERTICAL_LINE_X: CGFloat = 37.0
