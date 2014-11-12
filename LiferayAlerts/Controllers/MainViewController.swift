@@ -57,7 +57,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 
 		var width: CGFloat = collectionView.frame.width;
 
-		return CGSize(width:width, height:60)
+		return CGSize(width:width, height:120)
 	}
 
 	func collectionView(collectionView: UICollectionView,

@@ -16,4 +16,31 @@
 * @author Josiane Bzerra
 */
 class LinkCardView: CardView {
+
+	override func setAlert(alert: Alert) {
+		super.setAlert(alert)
+
+		_setDivider()
+		_setURL(alert.getURL()!)
+	}
+
+	private func _setDivider() {
+		divider.backgroundColor = UIColors.CARD_DIVIDER_COLOR
+	}
+
+	private func _setURL(url: String) {
+		linkTextView.text = url
+
+		var attrs: [String: AnyObject] = [
+			NSForegroundColorAttributeName: UIColors.CARD_LINK_COLOR,
+			NSFontAttributeName:TEXT_FONT,
+			NSUnderlineStyleAttributeName:NSUnderlineStyle.StyleSingle.rawValue,
+		]
+
+		linkTextView.linkTextAttributes = attrs
+	}
+
+	@IBOutlet var divider: UIView!
+	@IBOutlet var linkTextView: UITextView!
+
 }

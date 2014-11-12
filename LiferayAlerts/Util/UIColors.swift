@@ -21,6 +21,8 @@ struct UIColors {
 
 	static let WHITE: UIColor = UIColor(rgb:"FFFFFF")
 
+	static let CARD_DIVIDER_COLOR = UIColor(rgb: "64D4D4D4")
+	static let CARD_LINK_COLOR = UIColor(rgb: "647EFB")
 	static let CARD_MESSAFE = UIColor(rgb: "233240")
 	static let CARD_SHAPE_BACKGROUND = WHITE
 	static let CARD_SHAPE_STROKE = UIColor(rgb:"D4D4D4")

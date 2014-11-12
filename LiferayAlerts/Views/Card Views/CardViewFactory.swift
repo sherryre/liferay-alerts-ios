@@ -25,7 +25,7 @@ class CardViewFactory {
 			case .IMAGE:
 				cardView = ImageCardView()
 			case .LINK:
-				cardView = LinkCardView()
+				cardView = LinkCardView.loadFromNib("LinkCardView")!
 			case .POLLS:
 				cardView = PollsCardView()
 			case .TEXT:
