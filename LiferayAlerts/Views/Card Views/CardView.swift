@@ -44,7 +44,9 @@ class CardView: UIView {
 	}
 
 	func setAlert(alert: Alert) {
-		_setMessage(alert.getMessage()!)
+		self.alert = alert;
+
+		_setMessage()
 	}
 
 	private func _drawArc(
@@ -97,8 +99,8 @@ class CardView: UIView {
 		_drawArc(path, center:bottomLeftArcCenter, startAngle:PI/2, endAngle:PI)
 	}
 
-	private func _setMessage(message: String) {
-		messageLabel.text = message
+	private func _setMessage() {
+		messageLabel.text = alert!.getMessage()
 		messageLabel.textColor = UIColors.CARD_MESSAFE
 		messageLabel.font = TEXT_FONT
 
@@ -119,6 +121,8 @@ class CardView: UIView {
 
 	let TEXT_FONT: UIFont = UIFont(
 		name: "Helvetica-Light", size: UIDimensions.CARD_TEXT_SIZE)!
+
+	var alert: Alert?
 
 	@IBOutlet var messageLabel: UILabel!
 
