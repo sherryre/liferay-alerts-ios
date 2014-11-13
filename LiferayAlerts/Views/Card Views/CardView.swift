@@ -100,6 +100,12 @@ class CardView: UIView {
 	}
 
 	private func _setMessage() {
+		if (!alert!.hasMessage()) {
+			messageLabel.removeFromSuperview()
+
+			return
+		}
+
 		messageLabel.text = alert!.getMessage()
 		messageLabel.textColor = UIColors.CARD_MESSAFE
 		messageLabel.font = TEXT_FONT

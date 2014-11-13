@@ -25,6 +25,12 @@ class LinkCardView: CardView {
 	}
 
 	private func _setDivider() {
+		if (!alert!.hasMessage()) {
+			divider.removeFromSuperview()
+
+			return
+		}
+
 		divider.backgroundColor = UIColors.CARD_DIVIDER_COLOR
 	}
 

@@ -31,4 +31,14 @@ extension Alert {
 		return payload["url"] as String?
 	}
 
+	func hasMessage() -> Bool {
+		var message: String? = getMessage()
+
+		if ((message == nil) || message!.isEmpty) {
+			return false
+		}
+
+		return true
+	}
+
 }
