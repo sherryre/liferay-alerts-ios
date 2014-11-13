@@ -30,7 +30,7 @@
                     </constraints>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-FR-ALv" userLabel="Link">
-                    <rect key="frame" x="18" y="65" width="571" height="524"/>
+                    <rect key="frame" x="18" y="59" width="571" height="530"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="iKb-DT-BoR"/>
@@ -43,6 +43,7 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="JHH-FR-ALv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="750" constant="11" id="AEF-7k-ZRY"/>
                 <constraint firstAttribute="trailing" secondItem="JHH-FR-ALv" secondAttribute="trailing" constant="11" id="Gzt-Tj-ayG"/>
                 <constraint firstItem="AT5-GW-u1Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="7" id="Jlw-rm-96E"/>
                 <constraint firstItem="JHH-FR-ALv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="OBa-0i-hLu"/>
@@ -50,7 +51,7 @@
                 <constraint firstAttribute="bottom" secondItem="JHH-FR-ALv" secondAttribute="bottom" constant="11" id="mBO-3T-6ts"/>
                 <constraint firstAttribute="trailing" secondItem="YMo-W8-3gZ" secondAttribute="trailing" constant="11" id="mRQ-Kf-LlM"/>
                 <constraint firstItem="YMo-W8-3gZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="mYw-9z-FBx"/>
-                <constraint firstItem="JHH-FR-ALv" firstAttribute="top" secondItem="AT5-GW-u1Z" secondAttribute="top" constant="21" id="uLV-tf-wcx"/>
+                <constraint firstItem="JHH-FR-ALv" firstAttribute="top" secondItem="AT5-GW-u1Z" secondAttribute="top" constant="15" id="uLV-tf-wcx"/>
                 <constraint firstAttribute="trailing" secondItem="AT5-GW-u1Z" secondAttribute="trailing" constant="2" id="unj-Y8-I2j"/>
                 <constraint firstItem="YMo-W8-3gZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="vvR-9m-t7R"/>
             </constraints>
