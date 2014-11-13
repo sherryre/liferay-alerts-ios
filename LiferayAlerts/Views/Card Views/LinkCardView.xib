@@ -29,7 +29,7 @@
                         <constraint firstAttribute="height" constant="1" id="S2C-9w-57I"/>
                     </constraints>
                 </view>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-FR-ALv" userLabel="Link">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-FR-ALv" userLabel="Link">
                     <rect key="frame" x="18" y="59" width="571" height="530"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
