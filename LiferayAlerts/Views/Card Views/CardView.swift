@@ -107,7 +107,7 @@ class CardView: UIView {
 		}
 
 		messageLabel.text = alert!.getMessage()
-		messageLabel.textColor = UIColors.CARD_MESSAFE
+		messageLabel.textColor = UIColors.CARD_MESSAGE
 		messageLabel.font = TEXT_FONT
 
 		var frame: CGRect = messageLabel.frame
