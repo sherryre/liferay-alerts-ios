@@ -35,6 +35,12 @@ class LinkCardView: CardView {
 	}
 
 	private func _setURL(url: String) {
+		var url = url
+		
+		if (!url.hasPrefix("http://") && !url.hasPrefix("https://")) {
+			url = "http://" + url
+		}
+
 		linkTextView.text = url
 
 		var attrs: [String: AnyObject] = [
