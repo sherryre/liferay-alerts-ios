@@ -15,37 +15,28 @@ import Foundation
 
 /**
  * @author Silvio Santos
- * @author Josiane Bezerra
  */
-extension Alert {
+class PollsQuestion {
 
-	func getMessage() -> String? {
-		return payload["alert"] as String?
-	}
+	init(jsonObj: [String: AnyObject]) {
+		choices = [PollsChoice]()
 
-	func getPollsQuestion() -> PollsQuestion {
-		var json: [String: AnyObject] =
-			payload["question"] as [String: AnyObject]
+		questionId = jsonObj[QUESTION_ID] as Int
 
-		return PollsQuestion(jsonObj:json)
-	}
+		var choicesJsonArray: [[String: AnyObject]] =
+			jsonObj[CHOICES] as [[String: AnyObject]]
 
-	func getType() -> AlertType? {
-		return AlertType(rawValue: (payload["type"] as String)) as AlertType?
-	}
+		for choiceJsonObj in choicesJsonArray {
+			var choice: PollsChoice = PollsChoice(jsonObj:choiceJsonObj)
 
-	func getURL() -> String? {
-		return payload["url"] as String?
-	}
-
-	func hasMessage() -> Bool {
-		var message: String? = getMessage()
-
-		if ((message == nil) || message!.isEmpty) {
-			return false
+			choices.append(choice)
 		}
-
-		return true
 	}
+
+	let CHOICES: String = "choices"
+	let QUESTION_ID: String = "questionId"
+
+	var choices: [PollsChoice]
+	var questionId: Int
 
 }
