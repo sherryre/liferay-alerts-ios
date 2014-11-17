@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -79,15 +79,15 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="KSJ-QJ-5IR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0dk-91-HMT"/>
-                <constraint firstItem="1UJ-Zd-czW" firstAttribute="bottom" secondItem="WWf-4T-41I" secondAttribute="bottom" id="794-4C-v2k"/>
+                <constraint firstItem="WWf-4T-41I" firstAttribute="bottom" secondItem="1UJ-Zd-czW" secondAttribute="bottom" id="794-4C-v2k"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bhb-VJ-cmw"/>
                 <constraint firstAttribute="bottom" secondItem="KSJ-QJ-5IR" secondAttribute="bottom" id="LaN-77-qxH"/>
                 <constraint firstItem="KSJ-QJ-5IR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rxc-uq-Uxm"/>
                 <constraint firstItem="1UJ-Zd-czW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Shu-La-4eK"/>
-                <constraint firstAttribute="trailing" secondItem="1UJ-Zd-czW" secondAttribute="trailing" id="dAg-jH-Hbi"/>
-                <constraint firstAttribute="trailing" secondItem="KSJ-QJ-5IR" secondAttribute="trailing" id="eeX-4X-elp"/>
-                <constraint firstItem="1UJ-Zd-czW" firstAttribute="leading" secondItem="WWf-4T-41I" secondAttribute="leading" id="k37-le-ZiC"/>
-                <constraint firstItem="1UJ-Zd-czW" firstAttribute="trailing" secondItem="WWf-4T-41I" secondAttribute="trailing" id="kaZ-xe-4rV"/>
+                <constraint firstItem="1UJ-Zd-czW" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="dAg-jH-Hbi"/>
+                <constraint firstItem="KSJ-QJ-5IR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="eeX-4X-elp"/>
+                <constraint firstItem="WWf-4T-41I" firstAttribute="leading" secondItem="1UJ-Zd-czW" secondAttribute="leading" id="k37-le-ZiC"/>
+                <constraint firstItem="WWf-4T-41I" firstAttribute="trailing" secondItem="1UJ-Zd-czW" secondAttribute="trailing" id="kaZ-xe-4rV"/>
             </constraints>
             <point key="canvasLocation" x="488" y="333"/>
         </view>
