@@ -101,19 +101,19 @@ class CardView: UIView {
 
 	private func _setMessage() {
 		if (!alert!.hasMessage()) {
-			messageLabel.removeFromSuperview()
+			messageTextView.removeFromSuperview()
 
 			return
 		}
 
-		messageLabel.text = alert!.getMessage()
-		messageLabel.textColor = UIColors.CARD_MESSAGE
-		messageLabel.font = TEXT_FONT
+		messageTextView.text = alert!.getMessage()
+		messageTextView.textColor = UIColors.CARD_MESSAGE
+		messageTextView.font = TEXT_FONT
 
-		var frame: CGRect = messageLabel.frame
-		frame.size.height = messageLabel.sizeThatFits(frame.size).height
+		var frame: CGRect = messageTextView.frame
+		frame.size.height = messageTextView.sizeThatFits(frame.size).height
 
-		messageLabel.frame = frame
+		messageTextView.frame = frame
 	}
 
 	let ARROW_HEIGHT: CGFloat = UIDimensions.CARD_ARROW_HEIGHT
@@ -130,6 +130,6 @@ class CardView: UIView {
 
 	var alert: Alert?
 
-	@IBOutlet var messageLabel: UILabel!
+	@IBOutlet var messageTextView: UITextView!
 
 }
