@@ -49,6 +49,15 @@ extension UIView {
 		view.addConstraints([bottom, leading, top, trailing])
 	}
 
+	func align(view1: UIView, belowView view2:UIView) {
+		let top = NSLayoutConstraint(item: view1,
+			attribute: NSLayoutAttribute.Top,
+			relatedBy: NSLayoutRelation.Equal, toItem: view2,
+			attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 1)
+
+		self.addConstraint(top)
+	}
+
 	func setWidthConstraint(width: CGFloat) {
 		self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(
 			"H:[self(\(width))]", options: NSLayoutFormatOptions(0),

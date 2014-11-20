@@ -15,6 +15,7 @@
 		2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55919F6D7AA00A72879 /* MainViewController.swift */; };
 		2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55B19F6D7AA00A72879 /* AppDelegate.swift */; };
 		293BB69C19F6A011004AF345 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293BB69B19F6A011004AF345 /* CoreData.framework */; };
+		295B52701A1E3AE60024B630 /* PollsCardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B526F1A1E3AE60024B630 /* PollsCardItemView.swift */; };
 		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
 		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
@@ -30,6 +31,7 @@
 		298A45B119FAD6CD00D9AB93 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298A45B019FAD6CD00D9AB93 /* MainViewController.xib */; };
 		299129FA1A1651A700E3CBF1 /* PollsChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299129F91A1651A700E3CBF1 /* PollsChoice.swift */; };
 		2999F2BC1A001A1000456701 /* GradientUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2999F2BB1A001A1000456701 /* GradientUtil.swift */; };
+		29AA6A061A1CE0F200ECB373 /* PollsCardItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29AA6A051A1CE0F200ECB373 /* PollsCardItemView.xib */; };
 		29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357919F6DD9600160E35 /* Images.xcassets */; };
 		29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */; };
 		29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DE3F9C1A139BD8006A637F /* LinkCardView.xib */; };
@@ -58,6 +60,7 @@
 		2938A55919F6D7AA00A72879 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2938A55B19F6D7AA00A72879 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293BB69B19F6A011004AF345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		295B526F1A1E3AE60024B630 /* PollsCardItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsCardItemView.swift; sourceTree = "<group>"; };
 		296C65A31A0155F200ACF560 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		297C30CE19ED71EA00057718 /* LiferayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,7 @@
 		298A45B019FAD6CD00D9AB93 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		299129F91A1651A700E3CBF1 /* PollsChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoice.swift; sourceTree = "<group>"; };
 		2999F2BB1A001A1000456701 /* GradientUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientUtil.swift; sourceTree = "<group>"; };
+		29AA6A051A1CE0F200ECB373 /* PollsCardItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsCardItemView.xib; sourceTree = "<group>"; };
 		29C6357919F6DD9600160E35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		29DE3F9C1A139BD8006A637F /* LinkCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCardView.xib; sourceTree = "<group>"; };
@@ -290,6 +294,8 @@
 				75DA6CC61A1132170078D3EE /* LinkCardView.swift */,
 				29DE3F9C1A139BD8006A637F /* LinkCardView.xib */,
 				75DA6CC81A11326A0078D3EE /* PollsCardView.swift */,
+				295B526F1A1E3AE60024B630 /* PollsCardItemView.swift */,
+				29AA6A051A1CE0F200ECB373 /* PollsCardItemView.xib */,
 				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
 				75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */,
 			);
@@ -373,6 +379,7 @@
 			files = (
 				290106981A02CDA9003C0F05 /* AlertViewCell.xib in Resources */,
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
+				29AA6A061A1CE0F200ECB373 /* PollsCardItemView.xib in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
 				29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */,
@@ -442,6 +449,7 @@
 				75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */,
 				75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */,
 				75DA6CC91A11326A0078D3EE /* PollsCardView.swift in Sources */,
+				295B52701A1E3AE60024B630 /* PollsCardItemView.swift in Sources */,
 				298A45AF19F9989A00D9AB93 /* UserDAO.swift in Sources */,
 				75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */,
 				29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */,

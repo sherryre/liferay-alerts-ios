@@ -49,7 +49,7 @@ class AlertViewCell: UICollectionViewCell {
 	func setAlert(alert: Alert) {
 		_setPortrait(alert.user)
 
-		var cardView: CardView = CardViewFactory.create(alert)
+		var cardView: UIView = CardViewFactory.create(alert)
 		cardViewContainer.addSubview(cardView)
 
 		cardView.setTranslatesAutoresizingMaskIntoConstraints(false)
