@@ -28,7 +28,7 @@ extension UIColor {
 		var red, green, blue, alpha : NSString
 
 		if (rgb.length == 6) {
-			alpha = "FF";
+			alpha = "FF"
 			red = rgb.substringWithRange(NSMakeRange(0, 2))
 			green = rgb.substringWithRange(NSMakeRange(2, 2))
 			blue = rgb.substringWithRange(NSMakeRange(4, 2))
