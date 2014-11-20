@@ -26,13 +26,36 @@ class AlertViewCell: UICollectionViewCell {
 		_setRadius(typeBadge)
 	}
 
+	override func preferredLayoutAttributesFittingAttributes(
+		attributes: UICollectionViewLayoutAttributes)
+		-> UICollectionViewLayoutAttributes! {
+
+		return super.preferredLayoutAttributesFittingAttributes(attributes)
+	}
+
+	override func systemLayoutSizeFittingSize(targetSize: CGSize,
+		withHorizontalFittingPriority horizontalPriority: UILayoutPriority,
+		verticalFittingPriority: UILayoutPriority) -> CGSize {
+
+		let horizontalPriority = UIDimensions.ALERT_HORIZONTAL_FITTING_PRIORITY
+
+		let size =  super.systemLayoutSizeFittingSize(targetSize,
+			withHorizontalFittingPriority: horizontalPriority,
+			verticalFittingPriority: verticalFittingPriority)
+
+		return size
+	}
+
 	func setAlert(alert: Alert) {
 		_setPortrait(alert.user)
 
 		var cardView: CardView = CardViewFactory.create(alert)
-		cardView.frame = cardViewContainer.bounds
-
 		cardViewContainer.addSubview(cardView)
+
+		cardView.setTranslatesAutoresizingMaskIntoConstraints(false)
+		cardView.setFrameConstraints(equalsToView: cardViewContainer)
+
+		self.layoutIfNeeded()
 	}
 
 	private func _setPortrait(user: User) {

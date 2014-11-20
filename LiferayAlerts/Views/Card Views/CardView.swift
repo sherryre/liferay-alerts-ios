@@ -109,11 +109,6 @@ class CardView: UIView {
 		messageTextView.text = alert!.getMessage()
 		messageTextView.textColor = UIColors.CARD_MESSAGE
 		messageTextView.font = TEXT_FONT
-
-		var frame: CGRect = messageTextView.frame
-		frame.size.height = messageTextView.sizeThatFits(frame.size).height
-
-		messageTextView.frame = frame
 	}
 
 	let ARROW_HEIGHT: CGFloat = UIDimensions.CARD_ARROW_HEIGHT

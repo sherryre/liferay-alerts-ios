@@ -52,15 +52,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 	}
 
 	func collectionView(collectionView: UICollectionView,
-		layout: UICollectionViewLayout, sizeForItemAtIndexPath: NSIndexPath)
-		-> CGSize {
-
-		var width: CGFloat = collectionView.frame.width;
-
-		return CGSize(width:width, height:120)
-	}
-
-	func collectionView(collectionView: UICollectionView,
 		numberOfItemsInSection section: Int) -> Int {
 
 		return alerts!.count
@@ -90,9 +81,14 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 		var layout: UICollectionViewFlowLayout =
 			collectionView.collectionViewLayout as UICollectionViewFlowLayout
 
-		var top = topBar.frame.height
-		layout.sectionInset = UIEdgeInsetsMake(top, 0, 0, 0);
+		let top = topBar.frame.height
+		layout.sectionInset.top = top
 		layout.minimumLineSpacing = 0
+
+		let width: CGFloat = UIScreen.mainScreen().bounds.width
+		let height: CGFloat = layout.itemSize.height
+
+		layout.estimatedItemSize = CGSize(width: width, height: height)
 	}
 
 	private func _initTopBar() {
