@@ -27,11 +27,11 @@ class CardView: UIView {
 		UIColors.CARD_SHAPE_STROKE.setStroke()
 
 		var path: UIBezierPath = UIBezierPath();
-		path.lineWidth = STROKE
 
 		_drawArrow(path)
 		_drawRectangle(path, rect:rect)
 
+		path.lineWidth = STROKE
 		path.closePath()
 		path.fill()
 		path.stroke()
@@ -59,15 +59,19 @@ class CardView: UIView {
 	}
 
 	private func _drawArrow(path: UIBezierPath) {
+		var arrow: UIBezierPath = UIBezierPath()
+
 		var bottom: CGPoint = CGPoint(
 			x:ARROW_WIDTH, y:(ARROW_START_Y + ARROW_HEIGHT))
 
 		var left: CGPoint = CGPoint(x:0, y:(ARROW_START_Y + ARROW_HEIGHT/2))
 		var top: CGPoint = CGPoint(x:ARROW_WIDTH, y:ARROW_START_Y)
 
-		path.moveToPoint(bottom)
-		path.addLineToPoint(left)
-		path.addLineToPoint(top)
+		arrow.moveToPoint(bottom)
+		arrow.addLineToPoint(left)
+		arrow.addLineToPoint(top)
+
+		path.appendPath(arrow)
 	}
 
 	private func _drawRectangle(path: UIBezierPath, rect: CGRect) {
@@ -85,17 +89,12 @@ class CardView: UIView {
 		var bottomLeftArcCenter = CGPoint(x:left, y:bottom)
 
 		_drawArc(path, center:topLeftArcCenter, startAngle:PI, endAngle:3*PI/2)
-		path.addLineToPoint(CGPoint(x:right, y:PADDING_VERTICAL))
 
 		_drawArc(path, center:topRightArcCenter, startAngle:3*PI/2,
 			endAngle:2*PI)
 
-		path.addLineToPoint(CGPoint(x:width, y:bottom))
-
 		_drawArc(path, center:bottomRightArcCenter, startAngle:2*PI,
 			endAngle:PI/2)
-
-		path.addLineToPoint(CGPoint(x:left, y:height))
 
 		_drawArc(path, center:bottomLeftArcCenter, startAngle:PI/2, endAngle:PI)
 	}
