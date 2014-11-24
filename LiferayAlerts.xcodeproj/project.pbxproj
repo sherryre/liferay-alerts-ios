@@ -26,7 +26,6 @@
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
 		29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2319F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift */; };
 		29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2519F8950900A7ADAF /* SettingsUtil.swift */; };
-		29841F2919F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2819F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m */; };
 		29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2A19F895E800A7ADAF /* DatabaseHelper.swift */; };
 		298A459E19F98BFC00D9AB93 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298A459919F98BFC00D9AB93 /* Alert.swift */; };
 		298A45A919F98CCB00D9AB93 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 298A45A719F98CCB00D9AB93 /* Model.xcdatamodeld */; };
@@ -74,8 +73,6 @@
 		29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationUtil.swift; sourceTree = "<group>"; };
 		29841F2319F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPushNotificationDeviceCallback.swift; path = Callbacks/AddPushNotificationDeviceCallback.swift; sourceTree = "<group>"; };
 		29841F2519F8950900A7ADAF /* SettingsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
-		29841F2719F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRPushnotificationsdeviceService_v62.h; sourceTree = "<group>"; };
-		29841F2819F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRPushnotificationsdeviceService_v62.m; sourceTree = "<group>"; };
 		29841F2A19F895E800A7ADAF /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		298A459919F98BFC00D9AB93 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Extensions/Alert.swift; sourceTree = "<group>"; };
 		298A45A819F98CCB00D9AB93 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -157,7 +154,6 @@
 				2938A55A19F6D7AA00A72879 /* Delegates */,
 				2901DB7219FEEE7500E25788 /* Extensions */,
 				298A459819F98BFC00D9AB93 /* Models */,
-				29841F1119F88CB400A7ADAF /* Services */,
 				297550BA19F6DC3200E3F550 /* Supporting Files */,
 				29841F1619F88D6D00A7ADAF /* Util */,
 				29C6357C19F6DDEE00160E35 /* Views */,
@@ -219,15 +215,6 @@
 				297C30CE19ED71EA00057718 /* LiferayAlerts.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		29841F1119F88CB400A7ADAF /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				29841F2719F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.h */,
-				29841F2819F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		29841F1619F88D6D00A7ADAF /* Util */ = {
@@ -453,7 +440,6 @@
 				75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */,
 				2917E7CD1A1640290050B757 /* PollsQuestion.swift in Sources */,
 				29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */,
-				29841F2919F8955A00A7ADAF /* LRPushnotificationsdeviceService_v62.m in Sources */,
 				29F8E49319FE886B000A7CA2 /* AlertExtension.swift in Sources */,
 				75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */,
 				75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */,
