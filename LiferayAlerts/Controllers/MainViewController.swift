@@ -42,11 +42,10 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 	func collectionView(collectionView: UICollectionView,
 		cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
-		var cell: TextAlertViewCell =
-			collectionView.dequeueReusableCellWithReuseIdentifier(
-			"TextAlertViewCellId", forIndexPath:indexPath) as TextAlertViewCell
+		var alert: Alert = alerts![indexPath.row]
 
-		cell.setAlert(alerts![indexPath.row])
+		var cell: UICollectionViewCell = AlertViewCellFactory.create(
+			collectionView, indexPath:indexPath, alert:alert)
 
 		return cell
 	}
@@ -77,6 +76,10 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 		var nib: UINib = UINib(nibName:"TextAlertViewCell", bundle:nil)
 		collectionView.registerNib(
 			nib, forCellWithReuseIdentifier:"TextAlertViewCellId")
+
+		nib = UINib(nibName:"PollsAlertViewCell", bundle:nil)
+		collectionView.registerNib(
+			nib, forCellWithReuseIdentifier:"PollsAlertViewCellId")
 
 		var layout: UICollectionViewFlowLayout =
 			collectionView.collectionViewLayout as UICollectionViewFlowLayout
