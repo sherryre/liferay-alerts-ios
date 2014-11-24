@@ -18,17 +18,7 @@
  */
 class PollsChoiceContainerView: UIView {
 
-	required init(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
-
-	override init(frame:CGRect) {
-		super.init(frame: frame)
-	}
-
-	init(alert: Alert) {
-		super.init()
-
+	func setAlert(alert: Alert) {
 		self.alert = alert
 
 		var choices = _getChoices()

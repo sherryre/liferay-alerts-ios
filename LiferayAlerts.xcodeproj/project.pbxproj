@@ -18,6 +18,8 @@
 		296160331A23615D00343359 /* PollsChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160311A23615D00343359 /* PollsChoiceView.swift */; };
 		296160341A23615D00343359 /* PollsChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296160321A23615D00343359 /* PollsChoiceView.xib */; };
 		296160361A23657600343359 /* BaseAlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160351A23657600343359 /* BaseAlertViewCell.swift */; };
+		2961603F1A237C5700343359 /* PollsAlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961603D1A237C5700343359 /* PollsAlertViewCell.swift */; };
+		296160401A237C5700343359 /* PollsAlertViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2961603E1A237C5700343359 /* PollsAlertViewCell.xib */; };
 		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
 		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
@@ -61,6 +63,8 @@
 		296160311A23615D00343359 /* PollsChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoiceView.swift; sourceTree = "<group>"; };
 		296160321A23615D00343359 /* PollsChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsChoiceView.xib; sourceTree = "<group>"; };
 		296160351A23657600343359 /* BaseAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlertViewCell.swift; sourceTree = "<group>"; };
+		2961603D1A237C5700343359 /* PollsAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsAlertViewCell.swift; sourceTree = "<group>"; };
+		2961603E1A237C5700343359 /* PollsAlertViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsAlertViewCell.xib; sourceTree = "<group>"; };
 		296C65A31A0155F200ACF560 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		297C30CE19ED71EA00057718 /* LiferayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,8 @@
 		2901069B1A03FBBF003C0F05 /* AlertViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				2961603D1A237C5700343359 /* PollsAlertViewCell.swift */,
+				2961603E1A237C5700343359 /* PollsAlertViewCell.xib */,
 				296160351A23657600343359 /* BaseAlertViewCell.swift */,
 				290106991A02CE0B003C0F05 /* TextAlertViewCell.swift */,
 				290106971A02CDA9003C0F05 /* TextAlertViewCell.xib */,
@@ -372,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				290106981A02CDA9003C0F05 /* TextAlertViewCell.xib in Resources */,
+				296160401A237C5700343359 /* PollsAlertViewCell.xib in Resources */,
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				296160341A23615D00343359 /* PollsChoiceView.xib in Resources */,
@@ -449,6 +456,7 @@
 				298A45A919F98CCB00D9AB93 /* Model.xcdatamodeld in Sources */,
 				29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */,
 				2901DB7419FEF71500E25788 /* UIColors.swift in Sources */,
+				2961603F1A237C5700343359 /* PollsAlertViewCell.swift in Sources */,
 				75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */,
 				296C65A41A0155F200ACF560 /* CardView.swift in Sources */,
 				2999F2BC1A001A1000456701 /* GradientUtil.swift in Sources */,
