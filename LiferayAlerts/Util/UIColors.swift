@@ -27,6 +27,9 @@ struct UIColors {
 	static let CARD_SHAPE_BACKGROUND = WHITE
 	static let CARD_SHAPE_STROKE = UIColor(rgb:"D4D4D4")
 
+	static let POLLS_CARD_CHOICE_SWITCH_OFF = UIColor(rgb: "4DFFFFFF")
+	static let POLLS_CARD_CHOICE_TEXT = WHITE
+
 	static let TOP_BAR_BACKGROUND = UIColor(rgb:"FBD22A")
 	static let TOP_BAR_BACKGROUND_CENTER = UIColor(rgb:"FFD12B")
 	static let TOP_BAR_DIVIDER = UIColor(rgb:"E4C143")

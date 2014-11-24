@@ -15,6 +15,8 @@
 		2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55919F6D7AA00A72879 /* MainViewController.swift */; };
 		2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55B19F6D7AA00A72879 /* AppDelegate.swift */; };
 		293BB69C19F6A011004AF345 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293BB69B19F6A011004AF345 /* CoreData.framework */; };
+		296160331A23615D00343359 /* PollsChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160311A23615D00343359 /* PollsChoiceView.swift */; };
+		296160341A23615D00343359 /* PollsChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296160321A23615D00343359 /* PollsChoiceView.xib */; };
 		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
 		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
@@ -58,6 +60,8 @@
 		2938A55919F6D7AA00A72879 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2938A55B19F6D7AA00A72879 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293BB69B19F6A011004AF345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		296160311A23615D00343359 /* PollsChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoiceView.swift; sourceTree = "<group>"; };
+		296160321A23615D00343359 /* PollsChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsChoiceView.xib; sourceTree = "<group>"; };
 		296C65A31A0155F200ACF560 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		297C30CE19ED71EA00057718 /* LiferayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +293,8 @@
 				75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */,
 				75DA6CC61A1132170078D3EE /* LinkCardView.swift */,
 				29DE3F9C1A139BD8006A637F /* LinkCardView.xib */,
+				296160311A23615D00343359 /* PollsChoiceView.swift */,
+				296160321A23615D00343359 /* PollsChoiceView.xib */,
 				75DA6CC81A11326A0078D3EE /* PollsCardView.swift */,
 				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
 				75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */,
@@ -374,6 +380,7 @@
 				290106981A02CDA9003C0F05 /* AlertViewCell.xib in Resources */,
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
+				296160341A23615D00343359 /* PollsChoiceView.xib in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
 				29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */,
 				297550C019F6DC7400E3F550 /* Info.plist in Resources */,
@@ -443,6 +450,7 @@
 				75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */,
 				75DA6CC91A11326A0078D3EE /* PollsCardView.swift in Sources */,
 				298A45AF19F9989A00D9AB93 /* UserDAO.swift in Sources */,
+				296160331A23615D00343359 /* PollsChoiceView.swift in Sources */,
 				75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */,
 				29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */,
 				298A459E19F98BFC00D9AB93 /* Alert.swift in Sources */,

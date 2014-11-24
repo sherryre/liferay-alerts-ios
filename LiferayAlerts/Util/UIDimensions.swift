@@ -28,6 +28,8 @@ struct UIDimensions {
 	static let CARD_STROKE: CGFloat = 1.0
 	static let CARD_TEXT_SIZE: CGFloat = 15.0
 
+	static let POLLS_CARD_CHOICE_HEIGHT: CGFloat = 80.0
+
 	static let VERTICAL_LINE_WIDTH: CGFloat = 1.0
 	static let VERTICAL_LINE_X: CGFloat = 37.0
 	static let VERTICAL_LINE_Y: CGFloat = 0.0
