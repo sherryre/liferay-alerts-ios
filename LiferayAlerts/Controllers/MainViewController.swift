@@ -73,14 +73,6 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 
 		collectionView.backgroundView = backgroundView
 
-		var nib: UINib = UINib(nibName:"TextAlertViewCell", bundle:nil)
-		collectionView.registerNib(
-			nib, forCellWithReuseIdentifier:"TextAlertViewCellId")
-
-		nib = UINib(nibName:"PollsAlertViewCell", bundle:nil)
-		collectionView.registerNib(
-			nib, forCellWithReuseIdentifier:"PollsAlertViewCellId")
-
 		var layout: UICollectionViewFlowLayout =
 			collectionView.collectionViewLayout as UICollectionViewFlowLayout
 
@@ -92,6 +84,8 @@ class MainViewController: UIViewController, UICollectionViewDataSource,
 		let height: CGFloat = layout.itemSize.height
 
 		layout.estimatedItemSize = CGSize(width: width, height: height)
+
+		AlertViewCellFactory.register(collectionView)
 	}
 
 	private func _initTopBar() {

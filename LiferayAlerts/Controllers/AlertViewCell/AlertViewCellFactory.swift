@@ -41,4 +41,14 @@ class AlertViewCellFactory {
 		return cell
 	}
 
+	class func register(collectionView: UICollectionView) {
+		var nib: UINib = UINib(nibName: "TextAlertViewCell", bundle:nil)
+		collectionView.registerNib(
+			nib, forCellWithReuseIdentifier: "TextAlertViewCellId")
+
+		nib = UINib(nibName: "PollsAlertViewCell", bundle:nil)
+		collectionView.registerNib(
+			nib, forCellWithReuseIdentifier: "PollsAlertViewCellId")
+	}
+
 }
