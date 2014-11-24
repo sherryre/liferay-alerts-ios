@@ -44,6 +44,7 @@ class CardView: UIView {
 	}
 
 	func setAlert(alert: Alert) {
+		self.contentMode = UIViewContentMode.Redraw
 		self.alert = alert;
 
 		_setMessage()
