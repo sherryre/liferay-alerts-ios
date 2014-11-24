@@ -18,7 +18,7 @@
 class CardViewFactory {
 
 	class func create(alert: Alert) -> CardView {
-		var cardView: CardView
+		var cardView: CardView?
 		let type: AlertType = alert.getType()!
 
 		switch (type) {
@@ -27,14 +27,14 @@ class CardViewFactory {
 			case .LINK:
 				cardView = LinkCardView.loadFromNib("LinkCardView")!
 			case .POLLS:
-				cardView = PollsCardView()
+				cardView = nil
 			case .TEXT:
 				cardView = TextCardView.loadFromNib("TextCardView")!
 		}
 
-		cardView.setAlert(alert)
+		cardView!.setAlert(alert)
 
-		return cardView
+		return cardView!
 	}
 
 }
