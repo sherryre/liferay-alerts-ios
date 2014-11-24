@@ -61,8 +61,8 @@
 		2938A55919F6D7AA00A72879 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2938A55B19F6D7AA00A72879 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293BB69B19F6A011004AF345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		296160311A23615D00343359 /* PollsChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoiceView.swift; sourceTree = "<group>"; };
-		296160321A23615D00343359 /* PollsChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsChoiceView.xib; sourceTree = "<group>"; };
+		296160311A23615D00343359 /* PollsChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsChoiceView.swift; path = Polls/PollsChoiceView.swift; sourceTree = "<group>"; };
+		296160321A23615D00343359 /* PollsChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PollsChoiceView.xib; path = Polls/PollsChoiceView.xib; sourceTree = "<group>"; };
 		296160351A23657600343359 /* BaseAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlertViewCell.swift; sourceTree = "<group>"; };
 		2961603D1A237C5700343359 /* PollsAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsAlertViewCell.swift; sourceTree = "<group>"; };
 		2961603E1A237C5700343359 /* PollsAlertViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsAlertViewCell.xib; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCardView.xib; sourceTree = "<group>"; };
 		75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorUtil.swift; sourceTree = "<group>"; };
 		75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
-		75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoiceContainerView.swift; sourceTree = "<group>"; };
+		75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsChoiceContainerView.swift; path = Polls/PollsChoiceContainerView.swift; sourceTree = "<group>"; };
 		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		9B9C5F42C056303CBB27D9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02323913B620570916343E5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +193,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		297AD9561A23A980006CF823 /* Polls */ = {
+			isa = PBXGroup;
+			children = (
+				75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */,
+				296160311A23615D00343359 /* PollsChoiceView.swift */,
+				296160321A23615D00343359 /* PollsChoiceView.xib */,
+			);
+			name = Polls;
+			sourceTree = "<group>";
+		};
 		297C30C519ED71EA00057718 = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				75DA6CBF1A11283A0078D3EE /* Card Views */,
+				297AD9561A23A980006CF823 /* Polls */,
 				29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */,
 			);
 			path = Views;
@@ -296,9 +307,6 @@
 			children = (
 				296C65A31A0155F200ACF560 /* CardView.swift */,
 				75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */,
-				296160311A23615D00343359 /* PollsChoiceView.swift */,
-				296160321A23615D00343359 /* PollsChoiceView.xib */,
-				75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */,
 				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
 				75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */,
 			);
