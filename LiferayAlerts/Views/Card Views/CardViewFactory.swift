@@ -24,12 +24,10 @@ class CardViewFactory {
 		switch (type) {
 			case .IMAGE:
 				cardView = ImageCardView()
-			case .LINK:
-				cardView = LinkCardView.loadFromNib("LinkCardView")!
+			case .LINK, .TEXT:
+				cardView = TextCardView.loadFromNib("TextCardView")!
 			case .POLLS:
 				cardView = nil
-			case .TEXT:
-				cardView = TextCardView.loadFromNib("TextCardView")!
 		}
 
 		cardView!.setAlert(alert)

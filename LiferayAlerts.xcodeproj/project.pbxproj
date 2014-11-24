@@ -35,7 +35,6 @@
 		2999F2BC1A001A1000456701 /* GradientUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2999F2BB1A001A1000456701 /* GradientUtil.swift */; };
 		29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357919F6DD9600160E35 /* Images.xcassets */; };
 		29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */; };
-		29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29DE3F9C1A139BD8006A637F /* LinkCardView.xib */; };
 		29F8E49319FE886B000A7CA2 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F8E49219FE886B000A7CA2 /* AlertExtension.swift */; };
 		534554EDA6DA97F7571BD665 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C5F42C056303CBB27D9EE /* libPods.a */; };
 		755E0CF61A1E133300D9E829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E0CF51A1E133300D9E829 /* UIView.swift */; };
@@ -47,7 +46,6 @@
 		75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */; };
 		75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */; };
 		75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */; };
-		75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC61A1132170078D3EE /* LinkCardView.swift */; };
 		75DA6CC91A11326A0078D3EE /* PollsChoiceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */; };
 		75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CCC1A1166580078D3EE /* AlertType.swift */; };
 /* End PBXBuildFile section */
@@ -84,7 +82,6 @@
 		2999F2BB1A001A1000456701 /* GradientUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientUtil.swift; sourceTree = "<group>"; };
 		29C6357919F6DD9600160E35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		29C6357D19F6DDEE00160E35 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		29DE3F9C1A139BD8006A637F /* LinkCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCardView.xib; sourceTree = "<group>"; };
 		29F8E49219FE886B000A7CA2 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertExtension.swift; path = Extensions/AlertExtension.swift; sourceTree = "<group>"; };
 		4B90D4F048190E83E3FB5B14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		755E0CF51A1E133300D9E829 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Extensions/UIView.swift; sourceTree = "<group>"; };
@@ -96,7 +93,6 @@
 		75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorUtil.swift; sourceTree = "<group>"; };
 		75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewFactory.swift; sourceTree = "<group>"; };
 		75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
-		75DA6CC61A1132170078D3EE /* LinkCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCardView.swift; sourceTree = "<group>"; };
 		75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoiceContainerView.swift; sourceTree = "<group>"; };
 		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		9B9C5F42C056303CBB27D9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,8 +290,6 @@
 				296C65A31A0155F200ACF560 /* CardView.swift */,
 				75DA6CC01A11296F0078D3EE /* CardViewFactory.swift */,
 				75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */,
-				75DA6CC61A1132170078D3EE /* LinkCardView.swift */,
-				29DE3F9C1A139BD8006A637F /* LinkCardView.xib */,
 				296160311A23615D00343359 /* PollsChoiceView.swift */,
 				296160321A23615D00343359 /* PollsChoiceView.xib */,
 				75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */,
@@ -385,7 +379,6 @@
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				296160341A23615D00343359 /* PollsChoiceView.xib in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
-				29DE3F9D1A139BD8006A637F /* LinkCardView.xib in Resources */,
 				297550C019F6DC7400E3F550 /* Info.plist in Resources */,
 				298A45B119FAD6CD00D9AB93 /* MainViewController.xib in Resources */,
 				75B8DE7F1A0AB6AC00298092 /* TextCardView.xib in Resources */,
@@ -451,7 +444,6 @@
 				75B8DE7B1A0A5B2F00298092 /* FontUtil.swift in Sources */,
 				75B8DE771A097A5900298092 /* UIDimensions.swift in Sources */,
 				75DA6CC11A11296F0078D3EE /* CardViewFactory.swift in Sources */,
-				75DA6CC71A1132170078D3EE /* LinkCardView.swift in Sources */,
 				75DA6CC91A11326A0078D3EE /* PollsChoiceContainerView.swift in Sources */,
 				298A45AF19F9989A00D9AB93 /* UserDAO.swift in Sources */,
 				296160331A23615D00343359 /* PollsChoiceView.swift in Sources */,
