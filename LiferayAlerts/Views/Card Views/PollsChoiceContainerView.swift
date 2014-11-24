@@ -101,10 +101,10 @@ class PollsChoiceContainerView: UIView {
 
 	private func _getChoiceBackgroundColor(index: Int) -> UIColor {
 		if ((index % 2) == 0) {
-			return UIColor.yellowColor()
+			return UIColors.POLLS_CARD_CHOICE_BACKGROUND_1
 		}
 
-		return UIColor.blueColor()
+		return UIColors.POLLS_CARD_CHOICE_BACKGROUND_2
 	}
 
 	private func _getChoices() -> [PollsChoice] {
