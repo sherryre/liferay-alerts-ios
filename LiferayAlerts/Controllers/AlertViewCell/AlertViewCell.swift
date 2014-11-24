@@ -19,18 +19,11 @@ import UIKit
  * @author Silvio Santos
  * @author Josiane Bezerra
  */
-class AlertViewCell: UICollectionViewCell {
+class AlertViewCell: BaseAlertViewCell {
 
 	override func awakeFromNib() {
 		_setRadius(portraitImageView)
 		_setRadius(typeBadge)
-	}
-
-	override func preferredLayoutAttributesFittingAttributes(
-		attributes: UICollectionViewLayoutAttributes)
-		-> UICollectionViewLayoutAttributes! {
-
-		return super.preferredLayoutAttributesFittingAttributes(attributes)
 	}
 
 	override func prepareForReuse() {
@@ -39,20 +32,9 @@ class AlertViewCell: UICollectionViewCell {
 		}
 	}
 
-	override func systemLayoutSizeFittingSize(targetSize: CGSize,
-		withHorizontalFittingPriority horizontalPriority: UILayoutPriority,
-		verticalFittingPriority: UILayoutPriority) -> CGSize {
+	override func setAlert(alert: Alert) {
+		super.setAlert(alert)
 
-		let horizontalPriority = UIDimensions.ALERT_HORIZONTAL_FITTING_PRIORITY
-
-		let size =  super.systemLayoutSizeFittingSize(targetSize,
-			withHorizontalFittingPriority: horizontalPriority,
-			verticalFittingPriority: verticalFittingPriority)
-
-		return size
-	}
-
-	func setAlert(alert: Alert) {
 		_setPortrait(alert.user)
 
 		var cardView: CardView = CardViewFactory.create(alert)

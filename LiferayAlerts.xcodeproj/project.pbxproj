@@ -17,6 +17,7 @@
 		293BB69C19F6A011004AF345 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293BB69B19F6A011004AF345 /* CoreData.framework */; };
 		296160331A23615D00343359 /* PollsChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160311A23615D00343359 /* PollsChoiceView.swift */; };
 		296160341A23615D00343359 /* PollsChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296160321A23615D00343359 /* PollsChoiceView.xib */; };
+		296160361A23657600343359 /* BaseAlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160351A23657600343359 /* BaseAlertViewCell.swift */; };
 		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
 		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
@@ -62,6 +63,7 @@
 		293BB69B19F6A011004AF345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		296160311A23615D00343359 /* PollsChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsChoiceView.swift; sourceTree = "<group>"; };
 		296160321A23615D00343359 /* PollsChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsChoiceView.xib; sourceTree = "<group>"; };
+		296160351A23657600343359 /* BaseAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlertViewCell.swift; sourceTree = "<group>"; };
 		296C65A31A0155F200ACF560 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		297C30CE19ED71EA00057718 /* LiferayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 			children = (
 				290106971A02CDA9003C0F05 /* AlertViewCell.xib */,
 				290106991A02CE0B003C0F05 /* AlertViewCell.swift */,
+				296160351A23657600343359 /* BaseAlertViewCell.swift */,
 			);
 			path = AlertViewCell;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296160361A23657600343359 /* BaseAlertViewCell.swift in Sources */,
 				298A45AB19F98D4E00D9AB93 /* User.swift in Sources */,
 				2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */,
 				298A45AE19F9989A00D9AB93 /* AlertDAO.swift in Sources */,
