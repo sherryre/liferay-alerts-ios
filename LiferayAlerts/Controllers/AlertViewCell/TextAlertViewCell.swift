@@ -37,9 +37,10 @@ class TextAlertViewCell: BaseAlertViewCell {
 
 		_setPortrait(alert.user)
 
-		var cardView: CardView = CardViewFactory.create(alert)
-		cardViewContainer.addSubview(cardView)
+		var cardView: CardView = TextCardView.loadFromNib("TextCardView")!
 
+		cardView.setAlert(alert)
+		cardViewContainer.addSubview(cardView)
 		cardView.setTranslatesAutoresizingMaskIntoConstraints(false)
 		cardView.setFrameConstraints(equalsToView: cardViewContainer)
 
