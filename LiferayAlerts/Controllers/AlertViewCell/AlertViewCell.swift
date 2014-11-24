@@ -33,6 +33,12 @@ class AlertViewCell: UICollectionViewCell {
 		return super.preferredLayoutAttributesFittingAttributes(attributes)
 	}
 
+	override func prepareForReuse() {
+		for view in cardViewContainer.subviews {
+			view.removeFromSuperview()
+		}
+	}
+
 	override func systemLayoutSizeFittingSize(targetSize: CGSize,
 		withHorizontalFittingPriority horizontalPriority: UILayoutPriority,
 		verticalFittingPriority: UILayoutPriority) -> CGSize {
