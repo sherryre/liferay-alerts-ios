@@ -19,7 +19,7 @@ import UIKit
  * @author Silvio Santos
  * @author Josiane Bezerra
  */
-class AlertViewCell: BaseAlertViewCell {
+class TextAlertViewCell: BaseAlertViewCell {
 
 	override func awakeFromNib() {
 		_setRadius(portraitImageView)

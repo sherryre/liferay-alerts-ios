@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290106981A02CDA9003C0F05 /* AlertViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290106971A02CDA9003C0F05 /* AlertViewCell.xib */; };
-		2901069A1A02CE0B003C0F05 /* AlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290106991A02CE0B003C0F05 /* AlertViewCell.swift */; };
+		290106981A02CDA9003C0F05 /* TextAlertViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290106971A02CDA9003C0F05 /* TextAlertViewCell.xib */; };
+		2901069A1A02CE0B003C0F05 /* TextAlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290106991A02CE0B003C0F05 /* TextAlertViewCell.swift */; };
 		2901DB7119FEDCB200E25788 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901DB7019FEDCB100E25788 /* UIColor.swift */; };
 		2901DB7419FEF71500E25788 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901DB7319FEF71500E25788 /* UIColors.swift */; };
 		2917E7CD1A1640290050B757 /* PollsQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917E7CC1A1640290050B757 /* PollsQuestion.swift */; };
@@ -53,8 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		290106971A02CDA9003C0F05 /* AlertViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertViewCell.xib; sourceTree = "<group>"; };
-		290106991A02CE0B003C0F05 /* AlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCell.swift; sourceTree = "<group>"; };
+		290106971A02CDA9003C0F05 /* TextAlertViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextAlertViewCell.xib; sourceTree = "<group>"; };
+		290106991A02CE0B003C0F05 /* TextAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAlertViewCell.swift; sourceTree = "<group>"; };
 		2901DB7019FEDCB100E25788 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Extensions/UIColor.swift; sourceTree = "<group>"; };
 		2901DB7319FEF71500E25788 /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		2917E7CC1A1640290050B757 /* PollsQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsQuestion.swift; sourceTree = "<group>"; };
@@ -119,9 +119,9 @@
 		2901069B1A03FBBF003C0F05 /* AlertViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				290106971A02CDA9003C0F05 /* AlertViewCell.xib */,
-				290106991A02CE0B003C0F05 /* AlertViewCell.swift */,
 				296160351A23657600343359 /* BaseAlertViewCell.swift */,
+				290106991A02CE0B003C0F05 /* TextAlertViewCell.swift */,
+				290106971A02CDA9003C0F05 /* TextAlertViewCell.xib */,
 			);
 			path = AlertViewCell;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290106981A02CDA9003C0F05 /* AlertViewCell.xib in Resources */,
+				290106981A02CDA9003C0F05 /* TextAlertViewCell.xib in Resources */,
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				296160341A23615D00343359 /* PollsChoiceView.xib in Resources */,
@@ -436,7 +436,7 @@
 				298A45AB19F98D4E00D9AB93 /* User.swift in Sources */,
 				2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */,
 				298A45AE19F9989A00D9AB93 /* AlertDAO.swift in Sources */,
-				2901069A1A02CE0B003C0F05 /* AlertViewCell.swift in Sources */,
+				2901069A1A02CE0B003C0F05 /* TextAlertViewCell.swift in Sources */,
 				755E0CF61A1E133300D9E829 /* UIView.swift in Sources */,
 				2901DB7119FEDCB200E25788 /* UIColor.swift in Sources */,
 				299129FA1A1651A700E3CBF1 /* PollsChoice.swift in Sources */,
