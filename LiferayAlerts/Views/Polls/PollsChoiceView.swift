@@ -34,6 +34,23 @@ class PollsChoiceView: UIView {
 			height: UIDimensions.POLLS_CARD_CHOICE_HEIGHT)
 	}
 
+	func setChoice(choice: PollsChoice) {
+		self.choice = choice
+
+		choiceLabel.text = choice.description
+		voteSwitch.on = choice.checked
+	}
+
+	@IBAction func voteChanged() {
+		var choiceContainer: PollsChoiceContainerView =
+			superview as PollsChoiceContainerView
+
+		choiceContainer.voteChanged(choice!)
+	}
+
+	var choice: PollsChoice?
+
 	@IBOutlet var choiceLabel: UILabel!
 	@IBOutlet var voteSwitch: UISwitch!
+
 }

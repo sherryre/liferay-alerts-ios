@@ -28,6 +28,9 @@ class PollsChoiceContainerView: UIView {
 		}
 	}
 
+	func voteChanged(choice: PollsChoice) {
+	}
+
 	override func intrinsicContentSize() -> CGSize {
 		var choices = _getChoices()
 
@@ -42,7 +45,7 @@ class PollsChoiceContainerView: UIView {
 		_addChoiceViewConstraints(view, index:CGFloat(index))
 
 		view.backgroundColor = _getChoiceBackgroundColor(index)
-		view.choiceLabel.text = choice.description
+		view.setChoice(choice)
 	}
 
 	private func _addChoiceView() -> PollsChoiceView {
