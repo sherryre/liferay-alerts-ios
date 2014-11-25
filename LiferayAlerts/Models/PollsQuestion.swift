@@ -33,6 +33,16 @@ class PollsQuestion {
 		}
 	}
 
+	func isAnswered() -> Bool {
+		for choice in choices {
+			if (choice.checked) {
+				return true
+			}
+		}
+
+		return false
+	}
+
 	func setVote(choiceId: Int) {
 		for choice in choices {
 			if (choice.choiceId == choiceId) {

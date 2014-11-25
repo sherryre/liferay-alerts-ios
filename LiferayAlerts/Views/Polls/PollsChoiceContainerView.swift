@@ -25,6 +25,10 @@ class PollsChoiceContainerView: UIView {
 		for (index, choice) in enumerate(self.question!.choices) {
 			_addChoice(index, choice:choice)
 		}
+
+		if (alert.getPollsQuestion().isAnswered()) {
+			userInteractionEnabled = false
+		}
 	}
 
 	func voteChanged(choice: PollsChoice) {
