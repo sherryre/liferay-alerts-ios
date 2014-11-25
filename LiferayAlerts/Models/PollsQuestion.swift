@@ -33,6 +33,29 @@ class PollsQuestion {
 		}
 	}
 
+	func setVote(choiceId: Int) {
+		for choice in choices {
+			if (choice.choiceId == choiceId) {
+				choice.checked = true
+			}
+		}
+	}
+
+	func toJsonObject() -> [String: AnyObject] {
+		var choicesJsonArray: [[String: AnyObject]] = [[String: AnyObject]]()
+
+		for choice in choices {
+			choicesJsonArray.append(choice.toJsonObject())
+		}
+
+		var jsonObj: [String: AnyObject] = [
+			CHOICES: choicesJsonArray,
+			QUESTION_ID: questionId
+		]
+
+		return jsonObj
+	}
+
 	let CHOICES: String = "pollsChoices"
 	let QUESTION_ID: String = "pollsQuestionId"
 

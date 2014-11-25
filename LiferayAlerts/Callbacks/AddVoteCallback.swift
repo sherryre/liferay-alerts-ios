@@ -19,11 +19,23 @@ import Foundation
  */
 class AddVoteCallback : NSObject, LRCallback {
 
+	init(alert: Alert, choiceId: Int) {
+		self.alert = alert
+		self.choiceId = choiceId
+	}
+
 	func onFailure(error: NSError!) {
 		println(error)
 	}
 
 	func onSuccess(result: AnyObject!) {
+		alert.setPollsVote(choiceId)
+
+		var database: DatabaseHelper = DatabaseHelper.getInstance()
+		database.commit()
 	}
+
+	var alert: Alert
+	var choiceId: Int
 
 }

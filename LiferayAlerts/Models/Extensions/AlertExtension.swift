@@ -48,4 +48,16 @@ extension Alert {
 		return true
 	}
 
+	func setPollsVote(choiceId: Int) {
+		var pollsQuestion: PollsQuestion = getPollsQuestion()
+		pollsQuestion.setVote(choiceId)
+
+		var payloadJsonObj: [String: AnyObject] = payload as [String: AnyObject]
+		var pollsJsonObj: AnyObject = pollsQuestion.toJsonObject() as AnyObject
+
+		payloadJsonObj["pollsQuestion"] = pollsJsonObj
+
+		payload = payloadJsonObj
+	}
+
 }

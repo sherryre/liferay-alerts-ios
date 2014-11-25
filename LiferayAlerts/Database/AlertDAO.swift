@@ -45,7 +45,7 @@ class AlertDAO {
 		payload: [NSObject: AnyObject], user: User, commit: Bool)
 		-> Alert {
 
-		var database: DatabaseHelper = DatabaseHelper.getInstance();
+		var database: DatabaseHelper = DatabaseHelper.getInstance()
 		var context: NSManagedObjectContext = database.getContext()!
 
 		var alert: Alert = NSEntityDescription.insertNewObjectForEntityForName(

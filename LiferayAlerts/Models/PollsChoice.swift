@@ -18,14 +18,30 @@ import Foundation
  */
 class PollsChoice {
 
+	let CHECKED: String = "checked";
 	let CHOICE_ID: String = "pollsChoiceId";
 	let DESCRIPTION: String = "description";
 
 	init(jsonObj: [String: AnyObject]) {
+		if let checked = jsonObj[CHECKED] as Bool? {
+			self.checked = checked
+		}
+
 		choiceId = jsonObj[CHOICE_ID] as Int
 		description = jsonObj[DESCRIPTION] as String
 	}
+	
+	func toJsonObject() -> [String: AnyObject] {
+		var jsonObj: [String: AnyObject] = [
+			CHECKED: checked,
+			CHOICE_ID: choiceId,
+			DESCRIPTION: description
+		]
 
+		return jsonObj
+	}
+
+	var checked: Bool = false
 	var choiceId: Int
 	var description: String
 

@@ -22,7 +22,8 @@ class PollsVoteServiceUtil {
 	class func addVote(alert: Alert, questionId: Int, choiceId: Int) {
 		var session: LRSession = SettingsUtil.getSession()
 
-		var callback: AddVoteCallback = AddVoteCallback()
+		var callback: AddVoteCallback = AddVoteCallback(
+			alert:alert, choiceId:choiceId)
 
 		session.callback = callback
 
