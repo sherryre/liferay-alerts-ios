@@ -42,6 +42,10 @@ class PollsChoiceView: UIView {
 	}
 
 	@IBAction func voteChanged() {
+		if (!voteSwitch.on) {
+			return
+		}
+
 		var choiceContainer: PollsChoiceContainerView =
 			superview as PollsChoiceContainerView
 

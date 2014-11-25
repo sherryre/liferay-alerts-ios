@@ -12,20 +12,28 @@
  * details.
  */
 
-#import <Foundation/Foundation.h>
+import Foundation
 
 /**
  * @author Silvio Santos
  */
+class PollsVoteServiceUtil {
 
-// Liferay services
-#import "LRCallback.h"
-#import "LRSession.h"
-#import "LRError.h"
-#import "LRJSONObjectWrapper.h"
-#import "LRPortraitUtil.h"
-#import "LRPollsVoteService_v62.h"
-#import "LRPushnotificationsdeviceService_v62.h"
+	class func addVote(alert: Alert, questionId: Int, choiceId: Int) {
+		var session: LRSession = SettingsUtil.getSession()
 
-//SDWebImage
-#import "UIImageView+WebCache.h"
+		var callback: AddVoteCallback = AddVoteCallback()
+
+		session.callback = callback
+
+		var service: LRPollsVoteService_v62 = LRPollsVoteService_v62(
+			session:session)
+
+		var error: NSError?
+
+		service.addVoteWithQuestionId(
+			Int64(questionId), choiceId:Int64(choiceId), serviceContext:nil,
+			error:&error)
+	}
+
+}

@@ -20,19 +20,20 @@ class PollsChoiceContainerView: UIView {
 
 	func setAlert(alert: Alert) {
 		self.alert = alert
+		self.question = alert.getPollsQuestion()
 
-		var choices = _getChoices()
-
-		for (index, choice) in enumerate(choices) {
+		for (index, choice) in enumerate(self.question!.choices) {
 			_addChoice(index, choice:choice)
 		}
 	}
 
 	func voteChanged(choice: PollsChoice) {
+		PollsVoteServiceUtil.addVote(
+			alert!, questionId:question!.questionId, choiceId:choice.choiceId)
 	}
 
 	override func intrinsicContentSize() -> CGSize {
-		var choices = _getChoices()
+		var choices = self.question!.choices
 
 		var choiceHeight: CGFloat = UIDimensions.POLLS_CARD_CHOICE_HEIGHT
 		var height: CGFloat = choiceHeight * CGFloat(choices.count)
@@ -100,13 +101,7 @@ class PollsChoiceContainerView: UIView {
 		return UIColors.POLLS_CARD_CHOICE_BACKGROUND_2
 	}
 
-	private func _getChoices() -> [PollsChoice] {
-		var question: PollsQuestion = self.alert!.getPollsQuestion()
-		var choices: [PollsChoice] = question.choices
-
-		return choices
-	}
-
+	var question: PollsQuestion?
 	var alert: Alert?
 
 }

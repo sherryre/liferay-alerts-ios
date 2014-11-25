@@ -23,4 +23,9 @@ class SettingsUtil {
 		return "http://192.168.110.177:8081"
 	}
 
+	class func getSession() -> LRSession {
+		return LRSession(
+			server:getServer(), username:"test@liferay.com", password:"test")
+	}
+
 }
