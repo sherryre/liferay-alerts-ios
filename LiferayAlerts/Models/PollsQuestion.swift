@@ -33,8 +33,8 @@ class PollsQuestion {
 		}
 	}
 
-	let CHOICES: String = "choices"
-	let QUESTION_ID: String = "questionId"
+	let CHOICES: String = "pollsChoices"
+	let QUESTION_ID: String = "pollsQuestionId"
 
 	var choices: [PollsChoice]
 	var questionId: Int

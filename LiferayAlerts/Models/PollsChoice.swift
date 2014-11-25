@@ -18,7 +18,7 @@ import Foundation
  */
 class PollsChoice {
 
-	let CHOICE_ID: String = "choiceId";
+	let CHOICE_ID: String = "pollsChoiceId";
 	let DESCRIPTION: String = "description";
 
 	init(jsonObj: [String: AnyObject]) {

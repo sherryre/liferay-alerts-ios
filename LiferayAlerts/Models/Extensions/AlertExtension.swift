@@ -25,7 +25,7 @@ extension Alert {
 
 	func getPollsQuestion() -> PollsQuestion {
 		var json: [String: AnyObject] =
-			payload["question"] as [String: AnyObject]
+			payload["pollsQuestion"] as [String: AnyObject]
 
 		return PollsQuestion(jsonObj:json)
 	}
