@@ -28,17 +28,20 @@ PODS:
     - AFNetworking (~> 2.3.0)
   - Liferay-iOS-SDK/Liferay-Sync-iOS-SDK (6.2.0.9):
     - AFNetworking (~> 2.3.0)
+  - MBProgressHUD (0.9)
   - SDWebImage (3.7.1):
     - SDWebImage/Core
   - SDWebImage/Core (3.7.1)
 
 DEPENDENCIES:
   - Liferay-iOS-SDK
+  - MBProgressHUD
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   Liferay-iOS-SDK: 7d60343da55def72b75f17a1530b8f2bcee3c156
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
   SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
 
 COCOAPODS: 0.34.2

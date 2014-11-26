@@ -15,6 +15,7 @@
 		2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55919F6D7AA00A72879 /* MainViewController.swift */; };
 		2938A56D19F6D7AA00A72879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2938A55B19F6D7AA00A72879 /* AppDelegate.swift */; };
 		293BB69C19F6A011004AF345 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293BB69B19F6A011004AF345 /* CoreData.framework */; };
+		294457EB1A2674F2007ECCC4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 294457EA1A2674F2007ECCC4 /* Localizable.strings */; };
 		296160331A23615D00343359 /* PollsChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160311A23615D00343359 /* PollsChoiceView.swift */; };
 		296160341A23615D00343359 /* PollsChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 296160321A23615D00343359 /* PollsChoiceView.xib */; };
 		296160361A23657600343359 /* BaseAlertViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160351A23657600343359 /* BaseAlertViewCell.swift */; };
@@ -62,6 +63,7 @@
 		2938A55919F6D7AA00A72879 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2938A55B19F6D7AA00A72879 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293BB69B19F6A011004AF345 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		294457EA1A2674F2007ECCC4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		296160311A23615D00343359 /* PollsChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsChoiceView.swift; path = Polls/PollsChoiceView.swift; sourceTree = "<group>"; };
 		296160321A23615D00343359 /* PollsChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PollsChoiceView.xib; path = Polls/PollsChoiceView.xib; sourceTree = "<group>"; };
 		296160351A23657600343359 /* BaseAlertViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlertViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				298A45A719F98CCB00D9AB93 /* Model.xcdatamodeld */,
 				29841F1519F88CE900A7ADAF /* LiferayAlerts-Bridging-Header.h */,
 				297550BD19F6DC7400E3F550 /* Info.plist */,
+				294457EA1A2674F2007ECCC4 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				29C6357A19F6DD9600160E35 /* Images.xcassets in Resources */,
 				75B8DE791A0A59D300298092 /* LiferayAlerts-Regular.ttf in Resources */,
 				296160341A23615D00343359 /* PollsChoiceView.xib in Resources */,
+				294457EB1A2674F2007ECCC4 /* Localizable.strings in Resources */,
 				29C6357E19F6DDEE00160E35 /* LaunchScreen.xib in Resources */,
 				297550C019F6DC7400E3F550 /* Info.plist in Resources */,
 				298A45B119FAD6CD00D9AB93 /* MainViewController.xib in Resources */,
