@@ -12,6 +12,7 @@
  * details.
  */
 
+import CoreData
 import Foundation
 
 /**
@@ -26,11 +27,15 @@ class AddVoteCallback : NSObject, LRCallback {
 
 	func onFailure(error: NSError!) {
 		println(error)
+
+		var database: DatabaseHelper = DatabaseHelper.getInstance()
+		var context: NSManagedObjectContext = database.getContext()!
+
+		context.refreshObject(alert, mergeChanges:false)
+
 	}
 
 	func onSuccess(result: AnyObject!) {
-		alert.setPollsVote(choiceId)
-
 		var database: DatabaseHelper = DatabaseHelper.getInstance()
 		database.commit()
 	}

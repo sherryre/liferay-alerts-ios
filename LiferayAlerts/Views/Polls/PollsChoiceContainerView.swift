@@ -34,6 +34,8 @@ class PollsChoiceContainerView: UIView {
 	func voteChanged(choice: PollsChoice) {
 		PollsVoteServiceUtil.addVote(
 			alert!, questionId:question!.questionId, choiceId:choice.choiceId)
+
+		alert!.setPollsVote(choice.choiceId)
 	}
 
 	override func intrinsicContentSize() -> CGSize {
