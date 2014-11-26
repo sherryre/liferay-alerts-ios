@@ -26,7 +26,7 @@ class PollsChoiceContainerView: UIView {
 			_addChoice(index, choice:choice)
 		}
 
-		if (alert.getPollsQuestion().isAnswered()) {
+		if (self.question!.isAnswered()) {
 			userInteractionEnabled = false
 		}
 	}
