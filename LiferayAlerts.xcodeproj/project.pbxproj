@@ -25,6 +25,7 @@
 		296ADD071A24B79F0099FA0F /* AddVoteCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ADD061A24B79F0099FA0F /* AddVoteCallback.swift */; };
 		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
 		2972965B1A25134A00E76429 /* PollsVoteServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2972965A1A25134A00E76429 /* PollsVoteServiceUtil.swift */; };
+		2972965D1A2616CB00E76429 /* NotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2972965C1A2616CB00E76429 /* NotificationUtil.swift */; };
 		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
 		29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */; };
 		29841F2419F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29841F2319F894ED00A7ADAF /* AddPushNotificationDeviceCallback.swift */; };
@@ -73,6 +74,7 @@
 		296ADD061A24B79F0099FA0F /* AddVoteCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddVoteCallback.swift; path = Callbacks/AddVoteCallback.swift; sourceTree = "<group>"; };
 		296C65A31A0155F200ACF560 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2972965A1A25134A00E76429 /* PollsVoteServiceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsVoteServiceUtil.swift; path = Services/PollsVoteServiceUtil.swift; sourceTree = "<group>"; };
+		2972965C1A2616CB00E76429 /* NotificationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationUtil.swift; sourceTree = "<group>"; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		297C30CE19ED71EA00057718 /* LiferayAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29841F1519F88CE900A7ADAF /* LiferayAlerts-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LiferayAlerts-Bridging-Header.h"; path = "Supporting Files/LiferayAlerts-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				75B8DE7A1A0A5B2F00298092 /* FontUtil.swift */,
 				2999F2BB1A001A1000456701 /* GradientUtil.swift */,
+				2972965C1A2616CB00E76429 /* NotificationUtil.swift */,
 				75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */,
 				29841F2119F893EE00A7ADAF /* PushNotificationUtil.swift */,
 				29841F2519F8950900A7ADAF /* SettingsUtil.swift */,
@@ -473,6 +476,7 @@
 				298A45A919F98CCB00D9AB93 /* Model.xcdatamodeld in Sources */,
 				29841F2619F8950900A7ADAF /* SettingsUtil.swift in Sources */,
 				2901DB7419FEF71500E25788 /* UIColors.swift in Sources */,
+				2972965D1A2616CB00E76429 /* NotificationUtil.swift in Sources */,
 				2961603F1A237C5700343359 /* PollsAlertViewCell.swift in Sources */,
 				296160421A237D7600343359 /* AlertViewCellFactory.swift in Sources */,
 				75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */,

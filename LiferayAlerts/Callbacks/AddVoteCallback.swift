@@ -35,6 +35,7 @@ class AddVoteCallback : NSObject, LRCallback {
 
 		showError()
 
+		PollsChoiceView.update(choiceId, checked:false)
 	}
 
 	func onSuccess(result: AnyObject!) {

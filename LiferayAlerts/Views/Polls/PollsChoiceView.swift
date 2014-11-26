@@ -19,6 +19,16 @@ import Foundation
  */
 class PollsChoiceView: UIView {
 
+	class func update(choiceId: Int, checked: Bool) {
+		var destination: String = PollsChoiceView._getDestination(choiceId)
+
+		NotificationUtil.send(destination, data:["checked": checked])
+	}
+
+	deinit {
+		NotificationUtil.unregister(self)
+	}
+
 	override func awakeFromNib() {
 		choiceLabel.textColor = UIColors.POLLS_CARD_CHOICE_TEXT
 
@@ -39,6 +49,23 @@ class PollsChoiceView: UIView {
 
 		choiceLabel.text = choice.description
 		voteSwitch.on = choice.checked
+
+		var choiceId: Int = choice.choiceId
+		var destination: String = PollsChoiceView._getDestination(choiceId)
+
+		NotificationUtil.register(
+			destination, observer:self, selector:"updateChoice:")
+	}
+
+	func updateChoice(notification: NSNotification) {
+		var values: [NSObject: AnyObject] = notification.userInfo!
+		var checked: Bool = values["checked"] as Bool
+
+		voteSwitch.setOn(checked, animated:true)
+	}
+
+	private class func _getDestination(choiceId: Int) -> String {
+		return "updatePollsChoice" + String(choiceId)
 	}
 
 	@IBAction func voteChanged() {
