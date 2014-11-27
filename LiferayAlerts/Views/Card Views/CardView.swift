@@ -23,10 +23,10 @@ class CardView: UIView {
 	override func drawRect(rect: CGRect) {
 		super.drawRect(rect)
 
+		_setRectOrigin()
+
 		UIColors.CARD_SHAPE_BACKGROUND.setFill()
 		UIColors.CARD_SHAPE_STROKE.setStroke()
-
-		_setRectY()
 
 		var path: UIBezierPath = UIBezierPath()
 
@@ -34,7 +34,7 @@ class CardView: UIView {
 		_drawRectangle(path, rect:rect)
 
 		path.closePath()
-		path.lineWidth = STROKE
+		path.lineWidth = UIDimensions.CARD_STROKE
 		path.fill()
 		path.stroke()
 	}
@@ -56,7 +56,8 @@ class CardView: UIView {
 		path: UIBezierPath, center: CGPoint, startAngle: CGFloat,
 		endAngle: CGFloat) {
 
-		path.addArcWithCenter(center, radius:RADIUS, startAngle:startAngle,
+		path.addArcWithCenter(
+			center, radius:UIDimensions.CARD_RADIUS, startAngle:startAngle,
 			endAngle:endAngle, clockwise:true)
 	}
 
@@ -70,19 +71,23 @@ class CardView: UIView {
 	}
 
 	private func _drawArrowLeft(path: UIBezierPath) {
+		var x: CGFloat = rectOrigin!.x
+		var height: CGFloat = UIDimensions.CARD_ARROW_HEIGHT
+		var width: CGFloat = UIDimensions.CARD_ARROW_WIDTH
+
 		var arrow: UIBezierPath = UIBezierPath()
 
 		var bottom: CGPoint = CGPoint(
-			x:ARROW_WIDTH,
-			y:(ARROW_LEFT_START_Y + ARROW_HEIGHT))
+			x:x,
+			y:(UIDimensions.CARD_ARROW_LEFT_START_Y + height))
 
 		var left: CGPoint = CGPoint(
-			x:0,
-			y:(ARROW_LEFT_START_Y + (ARROW_HEIGHT / 2)))
+			x:(x - width),
+			y:(UIDimensions.CARD_ARROW_LEFT_START_Y + (height / 2)))
 
 		var top: CGPoint = CGPoint(
-			x:ARROW_WIDTH,
-			y:ARROW_LEFT_START_Y)
+			x:x,
+			y:UIDimensions.CARD_ARROW_LEFT_START_Y)
 
 		arrow.moveToPoint(bottom)
 		arrow.addLineToPoint(left)
@@ -94,17 +99,21 @@ class CardView: UIView {
 	private func _drawArrowTop(path: UIBezierPath) {
 		var arrow: UIBezierPath = UIBezierPath()
 
+		var y: CGFloat = rectOrigin!.y;
+		var height: CGFloat = UIDimensions.CARD_ARROW_WIDTH
+		var width: CGFloat = UIDimensions.CARD_ARROW_HEIGHT
+
 		var left: CGPoint = CGPoint(
 			x:UIDimensions.CARD_ARROW_TOP_START_X,
-			y:rectY)
+			y:y)
 
 		var top: CGPoint = CGPoint(
-			x:(UIDimensions.CARD_ARROW_TOP_START_X + (ARROW_HEIGHT / 2)),
-			y:(rectY - UIDimensions.CARD_ARROW_WIDTH))
+			x:(UIDimensions.CARD_ARROW_TOP_START_X + (width / 2)),
+			y:(y - height))
 
 		var right: CGPoint = CGPoint(
-			x:(UIDimensions.CARD_ARROW_TOP_START_X + ARROW_HEIGHT),
-			y:rectY)
+			x:(UIDimensions.CARD_ARROW_TOP_START_X + width),
+			y:y)
 
 		arrow.moveToPoint(left)
 		arrow.addLineToPoint(top)
@@ -114,13 +123,16 @@ class CardView: UIView {
 	}
 
 	private func _drawRectangle(path: UIBezierPath, rect: CGRect) {
-		var width = rect.width - PADDING_HORIZONTAL
-		var height = rect.height - rectY
+		var x: CGFloat = rectOrigin!.x
+		var y: CGFloat = rectOrigin!.y
+		var width = rect.width - x
+		var height = rect.height - y
+		var PI: CGFloat = CGFloat(M_PI)
 
-		var left: CGFloat = (RADIUS + ARROW_WIDTH)
-		var top: CGFloat = (RADIUS + rectY)
-		var right: CGFloat = (width - RADIUS)
-		var bottom: CGFloat = (height - RADIUS)
+		var left: CGFloat = (UIDimensions.CARD_RADIUS + x)
+		var top: CGFloat = (UIDimensions.CARD_RADIUS + y)
+		var right: CGFloat = (width - UIDimensions.CARD_RADIUS)
+		var bottom: CGFloat = (height - UIDimensions.CARD_RADIUS)
 
 		var topLeftArcCenter = CGPoint(x:left, y:top)
 		var topRightArcCenter = CGPoint(x:right, y:top)
@@ -158,28 +170,25 @@ class CardView: UIView {
 		messageTextView.font = TEXT_FONT
 	}
 
-	private func _setRectY() {
-		if (!leftArrow) {
-			rectY = rectY + ARROW_WIDTH
+	private func _setRectOrigin() {
+		rectOrigin = CGPoint(
+			x:UIDimensions.CARD_PADDING_HORIZONTAL,
+			y:UIDimensions.CARD_PADDING_VERTICAL)
+
+		if (leftArrow) {
+			rectOrigin!.x = rectOrigin!.x + UIDimensions.CARD_ARROW_WIDTH
+		}
+		else {
+			rectOrigin!.y = rectOrigin!.y + UIDimensions.CARD_ARROW_WIDTH
 		}
 	}
-
-	let ARROW_HEIGHT: CGFloat = UIDimensions.CARD_ARROW_HEIGHT
-	let ARROW_LEFT_START_Y: CGFloat = UIDimensions.CARD_ARROW_LEFT_START_Y
-	let ARROW_TOP_START_X: CGFloat = UIDimensions.CARD_ARROW_TOP_START_X
-	let ARROW_WIDTH: CGFloat = UIDimensions.CARD_ARROW_WIDTH
-	let PADDING_HORIZONTAL: CGFloat = UIDimensions.CARD_PADDING_HORIZONTAL
-	let PADDING_VERTICAL: CGFloat = UIDimensions.CARD_PADDING_VERTICAL
-	let PI: CGFloat = 3.1415
-	let RADIUS: CGFloat = UIDimensions.CARD_RADIUS
-	let STROKE: CGFloat = UIDimensions.CARD_STROKE
 
 	let TEXT_FONT: UIFont = UIFont(
 		name: "Helvetica-Light", size: UIDimensions.CARD_TEXT_SIZE)!
 
 	var alert: Alert?
-	var leftArrow: Bool = false
-	var rectY: CGFloat = UIDimensions.CARD_PADDING_VERTICAL
+	var leftArrow: Bool = true
+	var rectOrigin: CGPoint?
 
 	@IBOutlet var messageTextView: UITextView!
 
