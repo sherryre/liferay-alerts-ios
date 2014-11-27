@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -11,7 +11,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xe-rJ-bys">
-                    <rect key="frame" x="18" y="11" width="571" height="578"/>
+                    <rect key="frame" x="18" y="11" width="571" height="544"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" red="0.1176470588" green="0.1960784314" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -19,17 +19,78 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                 </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbJ-2r-s9M" userLabel="Bottom Bar">
+                    <rect key="frame" x="18" y="553" width="571" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05T-7B-vRV" userLabel="Like Button">
+                            <rect key="frame" x="9" y="10" width="22" height="25"/>
+                            <state key="normal" image="icon_love_regular">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq6-vI-aTd" userLabel="Like Label">
+                            <rect key="frame" x="36" y="15" width="27" height="15"/>
+                            <accessibility key="accessibilityConfiguration" label="Love"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKw-3E-vAH" userLabel="Comment Button">
+                            <rect key="frame" x="79" y="9" width="21" height="25"/>
+                            <state key="normal" image="icon_comment">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fet-YZ-fwD" userLabel="Comment Label">
+                            <rect key="frame" x="105" y="14" width="55" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="9hv-19-DkK"/>
+                        <constraint firstItem="05T-7B-vRV" firstAttribute="leading" secondItem="QbJ-2r-s9M" secondAttribute="leading" constant="9" id="IBW-wY-vmT"/>
+                        <constraint firstAttribute="centerY" secondItem="05T-7B-vRV" secondAttribute="centerY" id="Jed-57-YZb"/>
+                        <constraint firstItem="Fet-YZ-fwD" firstAttribute="leading" secondItem="KKw-3E-vAH" secondAttribute="trailing" constant="5" id="Q23-Qf-ECl"/>
+                        <constraint firstItem="Fet-YZ-fwD" firstAttribute="leading" secondItem="Lq6-vI-aTd" secondAttribute="trailing" constant="111" id="XuR-he-rRW"/>
+                        <constraint firstAttribute="centerY" secondItem="Lq6-vI-aTd" secondAttribute="centerY" id="ZRI-gd-bVL"/>
+                        <constraint firstItem="KKw-3E-vAH" firstAttribute="leading" secondItem="Lq6-vI-aTd" secondAttribute="trailing" constant="16" id="fpX-3v-fFQ"/>
+                        <constraint firstAttribute="centerY" secondItem="KKw-3E-vAH" secondAttribute="centerY" constant="1" id="muK-9M-X9B"/>
+                        <constraint firstAttribute="centerY" secondItem="Fet-YZ-fwD" secondAttribute="centerY" constant="1" id="nLK-KZ-av5"/>
+                        <constraint firstItem="Lq6-vI-aTd" firstAttribute="leading" secondItem="05T-7B-vRV" secondAttribute="trailing" constant="5" id="sR1-Gc-QeG"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="XuR-he-rRW"/>
+                        </mask>
+                    </variation>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="6Xe-rJ-bys" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="9IS-Tp-r0f"/>
-                <constraint firstAttribute="bottom" secondItem="6Xe-rJ-bys" secondAttribute="bottom" constant="11" id="S20-X8-hBL"/>
+                <constraint firstItem="QbJ-2r-s9M" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-2" id="GJG-TQ-5KJ"/>
+                <constraint firstItem="6Xe-rJ-bys" firstAttribute="bottom" secondItem="QbJ-2r-s9M" secondAttribute="top" constant="2" id="MWQ-3D-wCH"/>
+                <constraint firstItem="QbJ-2r-s9M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="2" id="hXE-z3-rF5"/>
+                <constraint firstAttribute="trailing" secondItem="QbJ-2r-s9M" secondAttribute="trailing" constant="11" id="pJb-rl-8EE"/>
+                <constraint firstItem="QbJ-2r-s9M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="s8N-rx-wUj"/>
                 <constraint firstAttribute="trailing" secondItem="6Xe-rJ-bys" secondAttribute="trailing" constant="11" id="sTC-kV-M6U"/>
                 <constraint firstItem="6Xe-rJ-bys" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="uVB-YH-SiJ"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="hXE-z3-rF5"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="messageTextView" destination="6Xe-rJ-bys" id="fxW-nm-bPR"/>
             </connections>
         </view>
     </objects>
+    <resources>
+        <image name="icon_comment" width="21" height="25"/>
+        <image name="icon_love_regular" width="22" height="25"/>
+    </resources>
 </document>
