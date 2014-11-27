@@ -62,6 +62,10 @@ class PollsChoiceView: UIView {
 		var checked: Bool = values["checked"] as Bool
 
 		voteSwitch.setOn(checked, animated:true)
+
+		if (!voteSwitch.on) {
+			superview!.userInteractionEnabled = true
+		}
 	}
 
 	private class func _getDestination(choiceId: Int) -> String {
@@ -72,6 +76,8 @@ class PollsChoiceView: UIView {
 		if (!voteSwitch.on) {
 			return
 		}
+
+		superview!.userInteractionEnabled = false
 
 		var choiceContainer: PollsChoiceContainerView =
 			superview as PollsChoiceContainerView
