@@ -85,6 +85,8 @@
                 </mask>
             </variation>
             <connections>
+                <outlet property="commentLabel" destination="Fet-YZ-fwD" id="TVr-9j-laO"/>
+                <outlet property="likeLabel" destination="Lq6-vI-aTd" id="1il-9U-pow"/>
                 <outlet property="messageTextView" destination="6Xe-rJ-bys" id="fxW-nm-bPR"/>
             </connections>
         </view>

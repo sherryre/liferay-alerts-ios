@@ -23,6 +23,11 @@ class TextCardView: BaseCardView {
 		return nib.instantiateWithOwner(nil, options: nil)[0] as? TextCardView
 	}
 
+	override func awakeFromNib() {
+		commentLabel.textColor = UIColors.CARD_BOTTOM_BAR_TEXT
+		likeLabel.textColor = UIColors.CARD_BOTTOM_BAR_TEXT
+	}
+
 	func setAlert(alert: Alert) {
 		self.contentMode = UIViewContentMode.Redraw
 		self.alert = alert;
@@ -47,5 +52,7 @@ class TextCardView: BaseCardView {
 
 	var alert: Alert?
 
+	@IBOutlet var commentLabel: UILabel!
+	@IBOutlet var likeLabel: UILabel!
 	@IBOutlet var messageTextView: UITextView!
 }
