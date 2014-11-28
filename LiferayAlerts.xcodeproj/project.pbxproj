@@ -23,7 +23,7 @@
 		296160401A237C5700343359 /* PollsAlertViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2961603E1A237C5700343359 /* PollsAlertViewCell.xib */; };
 		296160421A237D7600343359 /* AlertViewCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296160411A237D7600343359 /* AlertViewCellFactory.swift */; };
 		296ADD071A24B79F0099FA0F /* AddVoteCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ADD061A24B79F0099FA0F /* AddVoteCallback.swift */; };
-		296C65A41A0155F200ACF560 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* CardView.swift */; };
+		296C65A41A0155F200ACF560 /* BaseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C65A31A0155F200ACF560 /* BaseCardView.swift */; };
 		2972965B1A25134A00E76429 /* PollsVoteServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2972965A1A25134A00E76429 /* PollsVoteServiceUtil.swift */; };
 		2972965D1A2616CB00E76429 /* NotificationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2972965C1A2616CB00E76429 /* NotificationUtil.swift */; };
 		297550C019F6DC7400E3F550 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 297550BD19F6DC7400E3F550 /* Info.plist */; };
@@ -50,7 +50,6 @@
 		75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B8DE7C1A0AAC7500298092 /* TextCardView.swift */; };
 		75B8DE7F1A0AB6AC00298092 /* TextCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */; };
 		75DA6CBE1A1127700078D3EE /* OperatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */; };
-		75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */; };
 		75DA6CC91A11326A0078D3EE /* PollsChoiceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */; };
 		75DA6CCD1A1166580078D3EE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA6CCC1A1166580078D3EE /* AlertType.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,7 @@
 		2961603E1A237C5700343359 /* PollsAlertViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollsAlertViewCell.xib; sourceTree = "<group>"; };
 		296160411A237D7600343359 /* AlertViewCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewCellFactory.swift; sourceTree = "<group>"; };
 		296ADD061A24B79F0099FA0F /* AddVoteCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddVoteCallback.swift; path = Callbacks/AddVoteCallback.swift; sourceTree = "<group>"; };
-		296C65A31A0155F200ACF560 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		296C65A31A0155F200ACF560 /* BaseCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCardView.swift; sourceTree = "<group>"; };
 		2972965A1A25134A00E76429 /* PollsVoteServiceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsVoteServiceUtil.swift; path = Services/PollsVoteServiceUtil.swift; sourceTree = "<group>"; };
 		2972965C1A2616CB00E76429 /* NotificationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationUtil.swift; sourceTree = "<group>"; };
 		297550BD19F6DC7400E3F550 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 		75B8DE7C1A0AAC7500298092 /* TextCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCardView.swift; sourceTree = "<group>"; };
 		75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCardView.xib; sourceTree = "<group>"; };
 		75DA6CBD1A1127700078D3EE /* OperatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorUtil.swift; sourceTree = "<group>"; };
-		75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 		75DA6CC81A11326A0078D3EE /* PollsChoiceContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollsChoiceContainerView.swift; path = Polls/PollsChoiceContainerView.swift; sourceTree = "<group>"; };
 		75DA6CCC1A1166580078D3EE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		9B9C5F42C056303CBB27D9EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,8 +310,7 @@
 		75DA6CBF1A11283A0078D3EE /* Card Views */ = {
 			isa = PBXGroup;
 			children = (
-				296C65A31A0155F200ACF560 /* CardView.swift */,
-				75DA6CC41A1131EB0078D3EE /* ImageCardView.swift */,
+				296C65A31A0155F200ACF560 /* BaseCardView.swift */,
 				75B8DE7C1A0AAC7500298092 /* TextCardView.swift */,
 				75B8DE7E1A0AB6AC00298092 /* TextCardView.xib */,
 			);
@@ -459,7 +456,6 @@
 				299129FA1A1651A700E3CBF1 /* PollsChoice.swift in Sources */,
 				2938A56C19F6D7AA00A72879 /* MainViewController.swift in Sources */,
 				29841F2219F893EE00A7ADAF /* PushNotificationUtil.swift in Sources */,
-				75DA6CC51A1131EB0078D3EE /* ImageCardView.swift in Sources */,
 				2917E7CD1A1640290050B757 /* PollsQuestion.swift in Sources */,
 				29841F2B19F895E800A7ADAF /* DatabaseHelper.swift in Sources */,
 				2972965B1A25134A00E76429 /* PollsVoteServiceUtil.swift in Sources */,
@@ -480,7 +476,7 @@
 				2961603F1A237C5700343359 /* PollsAlertViewCell.swift in Sources */,
 				296160421A237D7600343359 /* AlertViewCellFactory.swift in Sources */,
 				75B8DE7D1A0AAC7500298092 /* TextCardView.swift in Sources */,
-				296C65A41A0155F200ACF560 /* CardView.swift in Sources */,
+				296C65A41A0155F200ACF560 /* BaseCardView.swift in Sources */,
 				2999F2BC1A001A1000456701 /* GradientUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

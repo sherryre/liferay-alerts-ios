@@ -13,7 +13,6 @@
  */
 
 import CoreData
-import Foundation
 
 /**
  * @author Silvio Santos

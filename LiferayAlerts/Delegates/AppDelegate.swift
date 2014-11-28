@@ -12,8 +12,6 @@
  * details.
  */
 
-import UIKit
-
 /**
  * @author Silvio Santos
  */

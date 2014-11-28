@@ -12,9 +12,6 @@
  * details.
  */
 
-import CoreData
-import UIKit
-
 /**
  * @author Silvio Santos
  */

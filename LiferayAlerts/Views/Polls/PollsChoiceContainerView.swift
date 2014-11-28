@@ -13,7 +13,6 @@
 */
 
 /**
- * @author Josiane Bzerra
  * @author Silvio Santos
  */
 class PollsChoiceContainerView: UIView {
@@ -101,10 +100,10 @@ class PollsChoiceContainerView: UIView {
 
 	private func _getChoiceBackgroundColor(index: Int) -> UIColor {
 		if ((index % 2) == 0) {
-			return UIColors.POLLS_CARD_CHOICE_BACKGROUND_1
+			return UIColors.POLLS_CARD_CHOICE_BACKGROUND_2
 		}
 
-		return UIColors.POLLS_CARD_CHOICE_BACKGROUND_2
+		return UIColors.POLLS_CARD_CHOICE_BACKGROUND_1
 	}
 
 	var question: PollsQuestion?

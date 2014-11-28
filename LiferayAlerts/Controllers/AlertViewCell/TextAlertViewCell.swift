@@ -12,9 +12,6 @@
  * details.
  */
 
-import CoreData
-import UIKit
-
 /**
  * @author Silvio Santos
  * @author Josiane Bezerra
@@ -37,7 +34,7 @@ class TextAlertViewCell: BaseAlertViewCell {
 
 		_setPortrait(alert.user)
 
-		var cardView: CardView = TextCardView.loadFromNib("TextCardView")!
+		var cardView: TextCardView = TextCardView.loadFromNib("TextCardView")!
 
 		cardView.setAlert(alert)
 		cardViewContainer.addSubview(cardView)

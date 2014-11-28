@@ -12,16 +12,14 @@
  * details.
  */
 
-import UIKit
-
 /**
  * @author Silvio Santos
  */
 class GradientUtil {
 
 	class func createGradient(
-		colors: [CGColor], frame: CGRect, startPoint: CGPoint, endPoint: CGPoint)
-		-> CAGradientLayer {
+		colors: [CGColor], frame: CGRect, startPoint: CGPoint,
+		endPoint: CGPoint) -> CAGradientLayer {
 
 		var gradient: CAGradientLayer = CAGradientLayer()
 

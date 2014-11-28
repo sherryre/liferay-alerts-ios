@@ -12,13 +12,11 @@
  * details.
  */
 
-import UIKit
-
 /**
  * @author Silvio Santos
  * @author Josiane Bzerra
  */
-class CardView: UIView {
+class BaseCardView: UIView {
 
 	override func drawRect(rect: CGRect) {
 		super.drawRect(rect)
@@ -37,19 +35,6 @@ class CardView: UIView {
 		path.lineWidth = UIDimensions.CARD_STROKE
 		path.fill()
 		path.stroke()
-	}
-
-	class func loadFromNib(name: String) -> CardView? {
-		let nib: UINib = UINib(nibName: name, bundle: NSBundle.mainBundle())
-
-		return nib.instantiateWithOwner(nil, options: nil)[0] as? CardView
-	}
-
-	func setAlert(alert: Alert) {
-		self.contentMode = UIViewContentMode.Redraw
-		self.alert = alert;
-
-		_setMessage()
 	}
 
 	private func _drawArc(
@@ -158,18 +143,6 @@ class CardView: UIView {
 		}
 	}
 
-	private func _setMessage() {
-		if (!alert!.hasMessage()) {
-			messageTextView.removeFromSuperview()
-
-			return
-		}
-
-		messageTextView.text = alert!.getMessage()
-		messageTextView.textColor = UIColors.CARD_MESSAGE
-		messageTextView.font = TEXT_FONT
-	}
-
 	private func _setRectOrigin() {
 		rectOrigin = CGPoint(
 			x:UIDimensions.CARD_PADDING_HORIZONTAL,
@@ -183,13 +156,7 @@ class CardView: UIView {
 		}
 	}
 
-	let TEXT_FONT: UIFont = UIFont(
-		name: "Helvetica-Light", size: UIDimensions.CARD_TEXT_SIZE)!
-
-	var alert: Alert?
 	var leftArrow: Bool = true
 	var rectOrigin: CGPoint?
-
-	@IBOutlet var messageTextView: UITextView!
 
 }
